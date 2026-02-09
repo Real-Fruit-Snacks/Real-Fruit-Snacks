@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" viewBox="0 0 800 280">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#11111b"/>
+      <stop offset="50%" style="stop-color:#1e1e2e"/>
+      <stop offset="100%" style="stop-color:#181825"/>
+    </linearGradient>
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#89b4fa"/>
+      <stop offset="30%" style="stop-color:#74c7ec"/>
+      <stop offset="60%" style="stop-color:#94e2d5"/>
+      <stop offset="100%" style="stop-color:#a6e3a1"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#89b4fa;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#a6e3a1;stop-opacity:0.06"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#74c7ec;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#89b4fa;stop-opacity:0.05"/>
+    </linearGradient>
+    <linearGradient id="wave3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#cba6f7;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#74c7ec;stop-opacity:0.04"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#89b4fa;stop-opacity:0"/>
+      <stop offset="20%" style="stop-color:#89b4fa"/>
+      <stop offset="50%" style="stop-color:#74c7ec"/>
+      <stop offset="80%" style="stop-color:#a6e3a1"/>
+      <stop offset="100%" style="stop-color:#a6e3a1;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="280" rx="12" fill="url(#bg)"/>
+  <rect width="800" height="280" rx="12" fill="none" stroke="#313244" stroke-width="1"/>
+
+  <!-- Swirling wave paths -->
+  <path d="M0,220 Q150,170 300,200 Q450,230 550,190 Q650,150 800,180 L800,280 L0,280 Z" fill="url(#wave1)"/>
+  <path d="M0,240 Q200,200 350,230 Q500,260 650,210 Q750,180 800,200 L800,280 L0,280 Z" fill="url(#wave2)"/>
+  <path d="M0,255 Q100,235 250,250 Q400,265 550,240 Q700,215 800,235 L800,280 L0,280 Z" fill="url(#wave3)"/>
+
+  <!-- Subtle particle dots -->
+  <g opacity="0.08">
+    <circle cx="680" cy="50" r="1.5" fill="#89b4fa"/>
+    <circle cx="700" cy="45" r="1" fill="#74c7ec"/>
+    <circle cx="720" cy="55" r="1.5" fill="#a6e3a1"/>
+    <circle cx="695" cy="65" r="1" fill="#cba6f7"/>
+    <circle cx="715" cy="38" r="1" fill="#89b4fa"/>
+    <circle cx="735" cy="48" r="1.5" fill="#74c7ec"/>
+    <circle cx="660" cy="58" r="1" fill="#a6e3a1"/>
+    <circle cx="740" cy="62" r="1" fill="#b4befe"/>
+    <circle cx="670" cy="40" r="1.5" fill="#89b4fa"/>
+    <circle cx="750" cy="42" r="1" fill="#74c7ec"/>
+    <circle cx="90" cy="210" r="1.5" fill="#a6e3a1"/>
+    <circle cx="70" cy="220" r="1" fill="#89b4fa"/>
+    <circle cx="110" cy="225" r="1.5" fill="#74c7ec"/>
+    <circle cx="85" cy="235" r="1" fill="#cba6f7"/>
+    <circle cx="55" cy="215" r="1" fill="#a6e3a1"/>
+    <circle cx="120" cy="215" r="1" fill="#89b4fa"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="115" font-family="'SF Mono','Fira Code','JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="42" font-weight="bold" fill="url(#title-grad)" text-anchor="middle" letter-spacing="6" filter="url(#glow)">REAL-FRUIT-SNACKS</text>
+
+  <!-- Accent line -->
+  <rect x="150" y="133" width="500" height="2" rx="1" fill="url(#accent-line)"/>
+
+  <!-- Subtitle -->
+  <text x="400" y="165" font-family="'SF Mono','Fira Code','JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="14" fill="#a6adc8" text-anchor="middle" letter-spacing="4">OFFENSIVE SECURITY TOOLSMITH</text>
+
+  <!-- Tech badges -->
+  <g transform="translate(128, 195)">
+    <rect x="0" y="0" width="100" height="28" rx="14" fill="#313244"/>
+    <rect x="0" y="0" width="100" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
+    <circle cx="18" cy="14" r="4" fill="#a6e3a1"/>
+    <text x="30" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace" font-size="11" fill="#cdd6f4">Python</text>
+
+    <rect x="120" y="0" width="80" height="28" rx="14" fill="#313244"/>
+    <rect x="120" y="0" width="80" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
+    <circle cx="138" cy="14" r="4" fill="#89b4fa"/>
+    <text x="150" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace" font-size="11" fill="#cdd6f4">Go</text>
+
+    <rect x="220" y="0" width="130" height="28" rx="14" fill="#313244"/>
+    <rect x="220" y="0" width="130" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
+    <circle cx="238" cy="14" r="4" fill="#cba6f7"/>
+    <text x="250" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace" font-size="11" fill="#cdd6f4">PowerShell</text>
+
+    <rect x="370" y="0" width="80" height="28" rx="14" fill="#313244"/>
+    <rect x="370" y="0" width="80" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
+    <circle cx="388" cy="14" r="4" fill="#fab387"/>
+    <text x="400" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace" font-size="11" fill="#cdd6f4">OSCP</text>
+
+    <rect x="470" y="0" width="80" height="28" rx="14" fill="#313244"/>
+    <rect x="470" y="0" width="80" height="28" rx="14" fill="none" stroke="#45475a" stroke-width="0.5"/>
+    <circle cx="488" cy="14" r="4" fill="#f38ba8"/>
+    <text x="500" y="18" font-family="'SF Mono','Fira Code','JetBrains Mono',Consolas,monospace" font-size="11" fill="#cdd6f4">Linux</text>
+  </g>
+</svg>
