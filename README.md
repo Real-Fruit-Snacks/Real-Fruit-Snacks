@@ -2,6 +2,8 @@
 
 Building open-source penetration testing tools — one wave at a time.
 
+`OSCP` · `Python` · `Go` · `PowerShell` · `JavaScript`
+
 ## The Toolkit
 
 | Tool | What It Does | Language |
