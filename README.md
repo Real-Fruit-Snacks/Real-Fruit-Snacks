@@ -1,8 +1,8 @@
-# 🌊 Offensive Security Toolsmith
+<p align="center">
+  <img src="header.svg" alt="Real-Fruit-Snacks" width="800"/>
+</p>
 
 Building open-source penetration testing tools — one wave at a time.
-
-`OSCP` · `Python` · `Go` · `PowerShell` · `JavaScript`
 
 ## The Toolkit
 
