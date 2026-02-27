@@ -4,18 +4,25 @@
 
 Building open-source penetration testing tools — one wave at a time.
 
-## Offensive Security
+## C2 & Post-Exploitation
+
+| Tool | What It Does | Language |
+|------|-------------|----------|
+| [**Aquifer**](https://github.com/Real-Fruit-Snacks/Aquifer) | Linux post-exploitation framework with kernel namespace isolation and polymorphic beacons | Go |
+| [**Siphon**](https://github.com/Real-Fruit-Snacks/Siphon) | Lightweight C2 framework — ECDH P-256 forward secrecy, AES-256-GCM, uTLS fingerprinting | Go |
+| [**Spillway**](https://github.com/Real-Fruit-Snacks/Spillway) | Reverse/bind FUSE filesystem mount over TLS 1.3 | Go |
+| [**Undertow**](https://github.com/Real-Fruit-Snacks/Undertow) | Statically-linked SSH server — reverse shells, SFTP, port forwarding | Go |
+
+## Enumeration & Exploitation
 
 | Tool | What It Does | Language |
 |------|-------------|----------|
 | [**Riptide**](https://github.com/Real-Fruit-Snacks/Riptide) | Collaborative browser terminal & playbook workspace for red teams | JavaScript |
-| [**Runoff**](https://real-fruit-snacks.github.io/Runoff/) | Extract AD attack paths & quick wins from BloodHound CE | Python |
+| [**Runoff**](https://github.com/Real-Fruit-Snacks/Runoff) | Extract AD attack paths & quick wins from BloodHound CE | Python |
 | [**Maelstrom**](https://github.com/Real-Fruit-Snacks/Maelstrom) | NetExec wrapper — 35+ AD enumeration modules in a single command | Python |
 | [**Rapids**](https://github.com/Real-Fruit-Snacks/Rapids) | Modular credential spraying — 28 protocol modules with pass-the-hash | Python |
-| [**Spillway**](https://github.com/Real-Fruit-Snacks/Spillway) | Reverse/bind FUSE filesystem mount over TLS 1.3 | Go |
-| [**Undertow**](https://github.com/Real-Fruit-Snacks/Undertow) | Statically-linked SSH server — reverse shells, SFTP, port forwarding | Go |
+| [**Seep**](https://github.com/Real-Fruit-Snacks/Seep) | Windows privilege escalation enumeration — 16 checks, 97 tools, MITRE ATT&CK mapping | Python |
 | [**Whirlpool**](https://github.com/Real-Fruit-Snacks/Whirlpool) | Privilege escalation reasoning engine — parses LinPEAS/WinPEAS output | Python |
-| [**Latch**](https://github.com/Real-Fruit-Snacks/Latch) | Lightweight Windows privilege escalation enumeration | PowerShell |
 
 ## Parsing & Reference
 
