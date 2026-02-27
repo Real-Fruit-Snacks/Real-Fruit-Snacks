@@ -18,14 +18,36 @@
 
 ### Featured Projects
 
-<p align="center">
-  <a href="https://github.com/Real-Fruit-Snacks/Riptide"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Real-Fruit-Snacks&repo=Riptide&theme=catppuccin_mocha&hide_border=true" alt="Riptide"/></a>
-  <a href="https://github.com/Real-Fruit-Snacks/Aquifer"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Real-Fruit-Snacks&repo=Aquifer&theme=catppuccin_mocha&hide_border=true" alt="Aquifer"/></a>
-</p>
-<p align="center">
-  <a href="https://github.com/Real-Fruit-Snacks/Siphon"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Real-Fruit-Snacks&repo=Siphon&theme=catppuccin_mocha&hide_border=true" alt="Siphon"/></a>
-  <a href="https://github.com/Real-Fruit-Snacks/Rapids"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Real-Fruit-Snacks&repo=Rapids&theme=catppuccin_mocha&hide_border=true" alt="Rapids"/></a>
-</p>
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://github.com/Real-Fruit-Snacks/Riptide"><b>Riptide</b></a><br/>
+      <sub>Collaborative browser terminal & playbook workspace for red teams</sub><br/><br/>
+      <img src="https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&logo=javascript&logoColor=1e1e2e" alt="JS"/>
+      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Riptide?style=flat-square&color=f9e2af&labelColor=1e1e2e" alt="Stars"/>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/Real-Fruit-Snacks/Aquifer"><b>Aquifer</b></a><br/>
+      <sub>Linux post-exploitation framework with kernel namespace isolation</sub><br/><br/>
+      <img src="https://img.shields.io/badge/-Go-89b4fa?style=flat-square&logo=go&logoColor=1e1e2e" alt="Go"/>
+      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Aquifer?style=flat-square&color=f9e2af&labelColor=1e1e2e" alt="Stars"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://github.com/Real-Fruit-Snacks/Siphon"><b>Siphon</b></a><br/>
+      <sub>Lightweight C2 — ECDH P-256 forward secrecy, AES-256-GCM, uTLS fingerprinting</sub><br/><br/>
+      <img src="https://img.shields.io/badge/-Go-89b4fa?style=flat-square&logo=go&logoColor=1e1e2e" alt="Go"/>
+      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Siphon?style=flat-square&color=f9e2af&labelColor=1e1e2e" alt="Stars"/>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/Real-Fruit-Snacks/Rapids"><b>Rapids</b></a><br/>
+      <sub>Modular credential spraying — 28 protocol modules with pass-the-hash</sub><br/><br/>
+      <img src="https://img.shields.io/badge/-Python-a6e3a1?style=flat-square&logo=python&logoColor=1e1e2e" alt="Python"/>
+      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Rapids?style=flat-square&color=f9e2af&labelColor=1e1e2e" alt="Stars"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -67,12 +89,9 @@
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Real-Fruit-Snacks&show_icons=true&theme=catppuccin_mocha&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Real-Fruit-Snacks&layout=compact&theme=catppuccin_mocha&hide_border=true" alt="Top Languages" height="165"/>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Real-Fruit-Snacks&theme=catppuccin-mocha&hide_border=true" alt="GitHub Streak"/>
+  <img src="https://img.shields.io/github/followers/Real-Fruit-Snacks?style=flat-square&color=89b4fa&labelColor=1e1e2e&label=Followers" alt="Followers"/>
+  <img src="https://img.shields.io/badge/Repos-16-a6e3a1?style=flat-square&labelColor=1e1e2e" alt="Repos"/>
+  <img src="https://img.shields.io/badge/Focus-Offensive%20Security-f38ba8?style=flat-square&labelColor=1e1e2e" alt="Focus"/>
 </p>
 
 ---
