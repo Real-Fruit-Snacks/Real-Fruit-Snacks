@@ -21,10 +21,10 @@
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <a href="https://github.com/Real-Fruit-Snacks/Riptide"><b>Riptide</b></a><br/>
-      <sub>Collaborative browser terminal & playbook workspace for red teams</sub><br/><br/>
-      <img src="https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&logo=javascript&logoColor=1e1e2e" alt="JS"/>
-      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Riptide?style=flat-square&color=f9e2af&labelColor=1e1e2e" alt="Stars"/>
+      <a href="https://github.com/Real-Fruit-Snacks/Siphon"><b>Siphon</b></a><br/>
+      <sub>Lightweight C2 — ECDH P-256 forward secrecy, AES-256-GCM, uTLS fingerprinting</sub><br/><br/>
+      <img src="https://img.shields.io/badge/-Go-89b4fa?style=flat-square&logo=go&logoColor=1e1e2e" alt="Go"/>
+      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Siphon?style=flat-square&color=f9e2af&labelColor=1e1e2e" alt="Stars"/>
     </td>
     <td align="center" width="50%">
       <a href="https://github.com/Real-Fruit-Snacks/Aquifer"><b>Aquifer</b></a><br/>
@@ -35,16 +35,16 @@
   </tr>
   <tr>
     <td align="center" width="50%">
-      <a href="https://github.com/Real-Fruit-Snacks/Siphon"><b>Siphon</b></a><br/>
-      <sub>Lightweight C2 — ECDH P-256 forward secrecy, AES-256-GCM, uTLS fingerprinting</sub><br/><br/>
-      <img src="https://img.shields.io/badge/-Go-89b4fa?style=flat-square&logo=go&logoColor=1e1e2e" alt="Go"/>
-      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Siphon?style=flat-square&color=f9e2af&labelColor=1e1e2e" alt="Stars"/>
+      <a href="https://github.com/Real-Fruit-Snacks/Riptide"><b>Riptide</b></a><br/>
+      <sub>Collaborative browser terminal & playbook workspace for red teams</sub><br/><br/>
+      <img src="https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&logo=javascript&logoColor=1e1e2e" alt="JS"/>
+      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Riptide?style=flat-square&color=f9e2af&labelColor=1e1e2e" alt="Stars"/>
     </td>
     <td align="center" width="50%">
-      <a href="https://github.com/Real-Fruit-Snacks/Rapids"><b>Rapids</b></a><br/>
-      <sub>Modular credential spraying — 28 protocol modules with pass-the-hash</sub><br/><br/>
-      <img src="https://img.shields.io/badge/-Python-a6e3a1?style=flat-square&logo=python&logoColor=1e1e2e" alt="Python"/>
-      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Rapids?style=flat-square&color=f9e2af&labelColor=1e1e2e" alt="Stars"/>
+      <a href="https://github.com/Real-Fruit-Snacks/Shallows"><b>Shallows</b></a><br/>
+      <sub>Browser-native Linux terminals powered by x86 emulation — no servers, no installs</sub><br/><br/>
+      <img src="https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&logo=javascript&logoColor=1e1e2e" alt="JS"/>
+      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Shallows?style=flat-square&color=f9e2af&labelColor=1e1e2e" alt="Stars"/>
     </td>
   </tr>
 </table>
@@ -71,13 +71,15 @@
 | [**Seep**](https://github.com/Real-Fruit-Snacks/Seep) | Windows privilege escalation enumeration — 16 checks, 97 tools, MITRE ATT&CK mapping | ![Python](https://img.shields.io/badge/-Python-a6e3a1?style=flat-square&logo=python&logoColor=1e1e2e) |
 | [**Whirlpool**](https://github.com/Real-Fruit-Snacks/Whirlpool) | Privilege escalation reasoning engine — parses LinPEAS/WinPEAS output | ![Python](https://img.shields.io/badge/-Python-a6e3a1?style=flat-square&logo=python&logoColor=1e1e2e) |
 
-## Parsing & Reference
+## Reference & Environments
 
 | Tool | What It Does | Language |
 |------|-------------|----------|
+| [**Shallows**](https://github.com/Real-Fruit-Snacks/Shallows) | Browser-native Linux terminals powered by x86 emulation — no servers, no installs | ![JS](https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&logo=javascript&logoColor=1e1e2e) |
 | [**Deluge**](https://github.com/Real-Fruit-Snacks/Deluge) | Nmap & RustScan output parser with color-coded reports and multi-format export | ![Python](https://img.shields.io/badge/-Python-a6e3a1?style=flat-square&logo=python&logoColor=1e1e2e) |
 | [**Surge**](https://github.com/Real-Fruit-Snacks/Surge) | Offline-first command reference with fuzzy search & variable substitution | ![JS](https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&logo=javascript&logoColor=1e1e2e) |
 | [**Fathom**](https://github.com/Real-Fruit-Snacks/Fathom) | Lightning-fast offline man pages browser with TLDR summaries | ![JS](https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&logo=javascript&logoColor=1e1e2e) |
+| [**Sunken-Archive**](https://github.com/Real-Fruit-Snacks/Sunken-Archive) | Personal knowledge base & digital garden built on Quartz | ![TS](https://img.shields.io/badge/-TypeScript-b4befe?style=flat-square&logo=typescript&logoColor=1e1e2e) |
 
 ## Utilities
 
@@ -90,7 +92,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/Real-Fruit-Snacks?style=flat-square&color=89b4fa&labelColor=1e1e2e&label=Followers" alt="Followers"/>
-  <img src="https://img.shields.io/badge/Repos-16-a6e3a1?style=flat-square&labelColor=1e1e2e" alt="Repos"/>
+  <img src="https://img.shields.io/badge/Repos-18-a6e3a1?style=flat-square&labelColor=1e1e2e" alt="Repos"/>
   <img src="https://img.shields.io/badge/Focus-Offensive%20Security-f38ba8?style=flat-square&labelColor=1e1e2e" alt="Focus"/>
 </p>
 
