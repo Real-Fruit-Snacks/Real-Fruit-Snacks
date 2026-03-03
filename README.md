@@ -18,7 +18,7 @@
 
 ### Featured Projects
 
-<table>
+<table align="center">
   <tr>
     <td align="center" width="50%">
       <br/>
