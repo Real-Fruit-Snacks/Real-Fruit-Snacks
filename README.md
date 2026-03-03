@@ -20,15 +20,13 @@
 
 <table align="center">
   <tr>
-    <td align="center" width="50%">
+    <td align="center" valign="top" width="50%">
       <br/>
       <a href="https://github.com/Real-Fruit-Snacks/Siphon">
         <img src="https://img.shields.io/badge/Siphon-1e1e2e?style=for-the-badge&amp;logo=github&amp;logoColor=cdd6f4" alt="Siphon"/>
       </a>
       <br/><br/>
-      Lightweight C2 with ECDH P-256 forward secrecy,
-      <br/>
-      AES-256-GCM encryption, and uTLS fingerprinting
+      Lightweight C2 — ECDH P-256 forward secrecy, AES-256-GCM encryption, uTLS fingerprinting
       <br/><br/>
       <a href="https://real-fruit-snacks.github.io/Siphon/">
         <img src="https://img.shields.io/badge/Docs-94e2d5?style=for-the-badge&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
@@ -36,15 +34,13 @@
       <img src="https://img.shields.io/badge/Go-6c8ec7?style=for-the-badge&amp;logo=go&amp;logoColor=1e1e2e" alt="Go"/>
       <br/><br/>
     </td>
-    <td align="center" width="50%">
+    <td align="center" valign="top" width="50%">
       <br/>
       <a href="https://github.com/Real-Fruit-Snacks/Aquifer">
         <img src="https://img.shields.io/badge/Aquifer-1e1e2e?style=for-the-badge&amp;logo=github&amp;logoColor=cdd6f4" alt="Aquifer"/>
       </a>
       <br/><br/>
-      Linux post-exploitation framework with kernel
-      <br/>
-      namespace isolation and polymorphic beacons
+      Linux post-exploitation — kernel namespace isolation, polymorphic beacons, 36 stealth modules
       <br/><br/>
       <a href="https://real-fruit-snacks.github.io/Aquifer/">
         <img src="https://img.shields.io/badge/Docs-94e2d5?style=for-the-badge&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
@@ -54,15 +50,13 @@
     </td>
   </tr>
   <tr>
-    <td align="center" width="50%">
+    <td align="center" valign="top" width="50%">
       <br/>
       <a href="https://github.com/Real-Fruit-Snacks/Riptide">
         <img src="https://img.shields.io/badge/Riptide-1e1e2e?style=for-the-badge&amp;logo=github&amp;logoColor=cdd6f4" alt="Riptide"/>
       </a>
       <br/><br/>
-      Collaborative browser terminal &amp; playbook
-      <br/>
-      workspace with real-time sync and credential vault
+      Collaborative browser terminal — real-time sync, credential vault, variable substitution
       <br/><br/>
       <a href="https://real-fruit-snacks.github.io/Riptide/">
         <img src="https://img.shields.io/badge/Docs-94e2d5?style=for-the-badge&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
@@ -70,15 +64,13 @@
       <img src="https://img.shields.io/badge/JavaScript-fab387?style=for-the-badge&amp;logo=javascript&amp;logoColor=1e1e2e" alt="JS"/>
       <br/><br/>
     </td>
-    <td align="center" width="50%">
+    <td align="center" valign="top" width="50%">
       <br/>
       <a href="https://github.com/Real-Fruit-Snacks/Shallows">
         <img src="https://img.shields.io/badge/Shallows-1e1e2e?style=for-the-badge&amp;logo=github&amp;logoColor=cdd6f4" alt="Shallows"/>
       </a>
       <br/><br/>
-      Browser-native Linux terminals powered by x86
-      <br/>
-      emulation — no servers, no installs, no accounts
+      Browser-native Linux terminals — no servers, no installs, no accounts, just open and type
       <br/><br/>
       <a href="https://real-fruit-snacks.github.io/Shallows/">
         <img src="https://img.shields.io/badge/Docs-94e2d5?style=for-the-badge&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
