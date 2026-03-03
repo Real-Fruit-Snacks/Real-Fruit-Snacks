@@ -26,16 +26,14 @@
         <img src="https://img.shields.io/badge/Siphon-1e1e2e?style=for-the-badge&amp;logo=github&amp;logoColor=cdd6f4" alt="Siphon"/>
       </a>
       <br/><br/>
-      <sub><b>Lightweight C2 framework for red team operations</b></sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/ECDH_P--256-313244?style=flat-square" alt="ECDH P-256"/>
-      <img src="https://img.shields.io/badge/AES--256--GCM-313244?style=flat-square" alt="AES-256-GCM"/>
-      <img src="https://img.shields.io/badge/uTLS-313244?style=flat-square" alt="uTLS"/>
+      Lightweight C2 with ECDH P-256 forward secrecy,
+      <br/>
+      AES-256-GCM encryption, and uTLS fingerprinting
       <br/><br/>
       <a href="https://real-fruit-snacks.github.io/Siphon/">
-        <img src="https://img.shields.io/badge/Docs-94e2d5?style=flat-square&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
+        <img src="https://img.shields.io/badge/Docs-94e2d5?style=for-the-badge&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
       </a>
-      <img src="https://img.shields.io/badge/-Go-6c8ec7?style=flat-square&amp;logo=go&amp;logoColor=1e1e2e" alt="Go"/>
+      <img src="https://img.shields.io/badge/Go-6c8ec7?style=for-the-badge&amp;logo=go&amp;logoColor=1e1e2e" alt="Go"/>
       <br/><br/>
     </td>
     <td align="center" width="50%">
@@ -44,16 +42,14 @@
         <img src="https://img.shields.io/badge/Aquifer-1e1e2e?style=for-the-badge&amp;logo=github&amp;logoColor=cdd6f4" alt="Aquifer"/>
       </a>
       <br/><br/>
-      <sub><b>Linux post-exploitation with kernel namespace isolation</b></sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/Namespace_Isolation-313244?style=flat-square" alt="Namespaces"/>
-      <img src="https://img.shields.io/badge/Polymorphic_Beacons-313244?style=flat-square" alt="Beacons"/>
-      <img src="https://img.shields.io/badge/36_Modules-313244?style=flat-square" alt="Modules"/>
+      Linux post-exploitation framework with kernel
+      <br/>
+      namespace isolation and polymorphic beacons
       <br/><br/>
       <a href="https://real-fruit-snacks.github.io/Aquifer/">
-        <img src="https://img.shields.io/badge/Docs-94e2d5?style=flat-square&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
+        <img src="https://img.shields.io/badge/Docs-94e2d5?style=for-the-badge&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
       </a>
-      <img src="https://img.shields.io/badge/-Go-6c8ec7?style=flat-square&amp;logo=go&amp;logoColor=1e1e2e" alt="Go"/>
+      <img src="https://img.shields.io/badge/Go-6c8ec7?style=for-the-badge&amp;logo=go&amp;logoColor=1e1e2e" alt="Go"/>
       <br/><br/>
     </td>
   </tr>
@@ -64,16 +60,14 @@
         <img src="https://img.shields.io/badge/Riptide-1e1e2e?style=for-the-badge&amp;logo=github&amp;logoColor=cdd6f4" alt="Riptide"/>
       </a>
       <br/><br/>
-      <sub><b>Collaborative browser terminal &amp; playbook workspace</b></sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/Real--time_Sync-313244?style=flat-square" alt="Sync"/>
-      <img src="https://img.shields.io/badge/Credential_Vault-313244?style=flat-square" alt="Vault"/>
-      <img src="https://img.shields.io/badge/Output_Parsing-313244?style=flat-square" alt="Parsing"/>
+      Collaborative browser terminal &amp; playbook
+      <br/>
+      workspace with real-time sync and credential vault
       <br/><br/>
       <a href="https://real-fruit-snacks.github.io/Riptide/">
-        <img src="https://img.shields.io/badge/Docs-94e2d5?style=flat-square&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
+        <img src="https://img.shields.io/badge/Docs-94e2d5?style=for-the-badge&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
       </a>
-      <img src="https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&amp;logo=javascript&amp;logoColor=1e1e2e" alt="JS"/>
+      <img src="https://img.shields.io/badge/JavaScript-fab387?style=for-the-badge&amp;logo=javascript&amp;logoColor=1e1e2e" alt="JS"/>
       <br/><br/>
     </td>
     <td align="center" width="50%">
@@ -82,16 +76,14 @@
         <img src="https://img.shields.io/badge/Shallows-1e1e2e?style=for-the-badge&amp;logo=github&amp;logoColor=cdd6f4" alt="Shallows"/>
       </a>
       <br/><br/>
-      <sub><b>Browser-native Linux terminals via x86 emulation</b></sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/No_Servers-313244?style=flat-square" alt="No Servers"/>
-      <img src="https://img.shields.io/badge/No_Installs-313244?style=flat-square" alt="No Installs"/>
-      <img src="https://img.shields.io/badge/WebAssembly-313244?style=flat-square" alt="WASM"/>
+      Browser-native Linux terminals powered by x86
+      <br/>
+      emulation — no servers, no installs, no accounts
       <br/><br/>
       <a href="https://real-fruit-snacks.github.io/Shallows/">
-        <img src="https://img.shields.io/badge/Docs-94e2d5?style=flat-square&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
+        <img src="https://img.shields.io/badge/Docs-94e2d5?style=for-the-badge&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
       </a>
-      <img src="https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&amp;logo=javascript&amp;logoColor=1e1e2e" alt="JS"/>
+      <img src="https://img.shields.io/badge/JavaScript-fab387?style=for-the-badge&amp;logo=javascript&amp;logoColor=1e1e2e" alt="JS"/>
       <br/><br/>
     </td>
   </tr>
