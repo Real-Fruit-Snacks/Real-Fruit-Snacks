@@ -24,7 +24,7 @@
       <a href="https://github.com/Real-Fruit-Snacks/Siphon"><b>Siphon</b></a><br/>
       <sub>Lightweight C2 — ECDH P-256 forward secrecy, AES-256-GCM, uTLS fingerprinting</sub><br/><br/>
       <img src="https://img.shields.io/badge/-Go-89b4fa?style=flat-square&amp;logo=go&amp;logoColor=1e1e2e" alt="Go"/>
-      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Siphon?style=flat-square&amp;color=f9e2af&amp;labelColor=1e1e2e" alt="Stars"/>
+      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Siphon?style=flat-square&amp;color=f9e2af&amp;labelColor=1e1e2e&amp;logo=github&amp;logoColor=f9e2af" alt="Stars"/>
     </td>
     <td align="center" width="50%">
       <a href="https://github.com/Real-Fruit-Snacks/Aquifer"><b>Aquifer</b></a><br/>
