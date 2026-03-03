@@ -18,29 +18,81 @@
 
 ### Featured Projects
 
-<table align="center">
+<table>
   <tr>
     <td align="center" width="50%">
-      <a href="https://github.com/Real-Fruit-Snacks/Siphon"><b>Siphon</b></a><br/>
-      <sub>Lightweight C2 — ECDH P-256 forward secrecy, AES-256-GCM, uTLS fingerprinting</sub><br/><br/>
+      <br/>
+      <a href="https://github.com/Real-Fruit-Snacks/Siphon">
+        <img src="https://img.shields.io/badge/Siphon-1e1e2e?style=for-the-badge&amp;logo=github&amp;logoColor=cdd6f4" alt="Siphon"/>
+      </a>
+      <br/><br/>
+      <sub><b>Lightweight C2 framework for red team operations</b></sub>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/ECDH_P--256-313244?style=flat-square" alt="ECDH P-256"/>
+      <img src="https://img.shields.io/badge/AES--256--GCM-313244?style=flat-square" alt="AES-256-GCM"/>
+      <img src="https://img.shields.io/badge/uTLS-313244?style=flat-square" alt="uTLS"/>
+      <br/><br/>
+      <a href="https://real-fruit-snacks.github.io/Siphon/">
+        <img src="https://img.shields.io/badge/Docs-94e2d5?style=flat-square&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
+      </a>
       <img src="https://img.shields.io/badge/-Go-6c8ec7?style=flat-square&amp;logo=go&amp;logoColor=1e1e2e" alt="Go"/>
+      <br/><br/>
     </td>
     <td align="center" width="50%">
-      <a href="https://github.com/Real-Fruit-Snacks/Aquifer"><b>Aquifer</b></a><br/>
-      <sub>Linux post-exploitation framework with kernel namespace isolation</sub><br/><br/>
+      <br/>
+      <a href="https://github.com/Real-Fruit-Snacks/Aquifer">
+        <img src="https://img.shields.io/badge/Aquifer-1e1e2e?style=for-the-badge&amp;logo=github&amp;logoColor=cdd6f4" alt="Aquifer"/>
+      </a>
+      <br/><br/>
+      <sub><b>Linux post-exploitation with kernel namespace isolation</b></sub>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Namespace_Isolation-313244?style=flat-square" alt="Namespaces"/>
+      <img src="https://img.shields.io/badge/Polymorphic_Beacons-313244?style=flat-square" alt="Beacons"/>
+      <img src="https://img.shields.io/badge/36_Modules-313244?style=flat-square" alt="Modules"/>
+      <br/><br/>
+      <a href="https://real-fruit-snacks.github.io/Aquifer/">
+        <img src="https://img.shields.io/badge/Docs-94e2d5?style=flat-square&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
+      </a>
       <img src="https://img.shields.io/badge/-Go-6c8ec7?style=flat-square&amp;logo=go&amp;logoColor=1e1e2e" alt="Go"/>
+      <br/><br/>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <a href="https://github.com/Real-Fruit-Snacks/Riptide"><b>Riptide</b></a><br/>
-      <sub>Collaborative browser terminal &amp; playbook workspace for red teams</sub><br/><br/>
+      <br/>
+      <a href="https://github.com/Real-Fruit-Snacks/Riptide">
+        <img src="https://img.shields.io/badge/Riptide-1e1e2e?style=for-the-badge&amp;logo=github&amp;logoColor=cdd6f4" alt="Riptide"/>
+      </a>
+      <br/><br/>
+      <sub><b>Collaborative browser terminal &amp; playbook workspace</b></sub>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Real--time_Sync-313244?style=flat-square" alt="Sync"/>
+      <img src="https://img.shields.io/badge/Credential_Vault-313244?style=flat-square" alt="Vault"/>
+      <img src="https://img.shields.io/badge/Output_Parsing-313244?style=flat-square" alt="Parsing"/>
+      <br/><br/>
+      <a href="https://real-fruit-snacks.github.io/Riptide/">
+        <img src="https://img.shields.io/badge/Docs-94e2d5?style=flat-square&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
+      </a>
       <img src="https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&amp;logo=javascript&amp;logoColor=1e1e2e" alt="JS"/>
+      <br/><br/>
     </td>
     <td align="center" width="50%">
-      <a href="https://github.com/Real-Fruit-Snacks/Shallows"><b>Shallows</b></a><br/>
-      <sub>Browser-native Linux terminals powered by x86 emulation — no servers, no installs</sub><br/><br/>
+      <br/>
+      <a href="https://github.com/Real-Fruit-Snacks/Shallows">
+        <img src="https://img.shields.io/badge/Shallows-1e1e2e?style=for-the-badge&amp;logo=github&amp;logoColor=cdd6f4" alt="Shallows"/>
+      </a>
+      <br/><br/>
+      <sub><b>Browser-native Linux terminals via x86 emulation</b></sub>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/No_Servers-313244?style=flat-square" alt="No Servers"/>
+      <img src="https://img.shields.io/badge/No_Installs-313244?style=flat-square" alt="No Installs"/>
+      <img src="https://img.shields.io/badge/WebAssembly-313244?style=flat-square" alt="WASM"/>
+      <br/><br/>
+      <a href="https://real-fruit-snacks.github.io/Shallows/">
+        <img src="https://img.shields.io/badge/Docs-94e2d5?style=flat-square&amp;logo=bookstack&amp;logoColor=1e1e2e" alt="Docs"/>
+      </a>
       <img src="https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&amp;logo=javascript&amp;logoColor=1e1e2e" alt="JS"/>
+      <br/><br/>
     </td>
   </tr>
 </table>
