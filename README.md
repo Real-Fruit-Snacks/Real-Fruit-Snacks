@@ -30,7 +30,7 @@
       <a href="https://github.com/Real-Fruit-Snacks/Aquifer"><b>Aquifer</b></a><br/>
       <sub>Linux post-exploitation framework with kernel namespace isolation</sub><br/><br/>
       <img src="https://img.shields.io/badge/-Go-89b4fa?style=flat-square&amp;logo=go&amp;logoColor=1e1e2e" alt="Go"/>
-      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Aquifer?style=flat-square&amp;color=f9e2af&amp;labelColor=1e1e2e" alt="Stars"/>
+      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Aquifer?style=flat-square&amp;color=f9e2af&amp;labelColor=1e1e2e&amp;logo=github&amp;logoColor=f9e2af" alt="Stars"/>
     </td>
   </tr>
   <tr>
@@ -38,13 +38,13 @@
       <a href="https://github.com/Real-Fruit-Snacks/Riptide"><b>Riptide</b></a><br/>
       <sub>Collaborative browser terminal &amp; playbook workspace for red teams</sub><br/><br/>
       <img src="https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&amp;logo=javascript&amp;logoColor=1e1e2e" alt="JS"/>
-      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Riptide?style=flat-square&amp;color=f9e2af&amp;labelColor=1e1e2e" alt="Stars"/>
+      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Riptide?style=flat-square&amp;color=f9e2af&amp;labelColor=1e1e2e&amp;logo=github&amp;logoColor=f9e2af" alt="Stars"/>
     </td>
     <td align="center" width="50%">
       <a href="https://github.com/Real-Fruit-Snacks/Shallows"><b>Shallows</b></a><br/>
       <sub>Browser-native Linux terminals powered by x86 emulation — no servers, no installs</sub><br/><br/>
       <img src="https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&amp;logo=javascript&amp;logoColor=1e1e2e" alt="JS"/>
-      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Shallows?style=flat-square&amp;color=f9e2af&amp;labelColor=1e1e2e" alt="Stars"/>
+      <img src="https://img.shields.io/github/stars/Real-Fruit-Snacks/Shallows?style=flat-square&amp;color=f9e2af&amp;labelColor=1e1e2e&amp;logo=github&amp;logoColor=f9e2af" alt="Stars"/>
     </td>
   </tr>
 </table>
