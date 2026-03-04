@@ -89,6 +89,7 @@
 |------|-------------|----------|
 | [**Aquifer**](https://github.com/Real-Fruit-Snacks/Aquifer) | Linux post-exploitation framework with kernel namespace isolation and polymorphic beacons | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat-square&logo=go&logoColor=1e1e2e) |
 | [**Siphon**](https://github.com/Real-Fruit-Snacks/Siphon) | Lightweight C2 framework — ECDH P-256 forward secrecy, AES-256-GCM, uTLS fingerprinting | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat-square&logo=go&logoColor=1e1e2e) |
+| [**Wellspring**](https://github.com/Real-Fruit-Snacks/Wellspring) | Payload delivery server — token-gated access, 12 delivery methods, AES-256-GCM encryption at rest | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat-square&logo=go&logoColor=1e1e2e) |
 | [**Spillway**](https://github.com/Real-Fruit-Snacks/Spillway) | Reverse/bind FUSE filesystem mount over TLS 1.3 | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat-square&logo=go&logoColor=1e1e2e) |
 | [**Undertow**](https://github.com/Real-Fruit-Snacks/Undertow) | Statically-linked SSH server — reverse shells, SFTP, port forwarding | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat-square&logo=go&logoColor=1e1e2e) |
 
@@ -108,6 +109,7 @@
 | Tool | What It Does | Language |
 |------|-------------|----------|
 | [**Shallows**](https://github.com/Real-Fruit-Snacks/Shallows) | Browser-native Linux terminals powered by x86 emulation — no servers, no installs | ![JS](https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&logo=javascript&logoColor=1e1e2e) |
+| [**Ripple**](https://github.com/Real-Fruit-Snacks/Ripple) | Browser-based Vim editor — CodeMirror 6, Catppuccin Mocha, zero dependencies | ![JS](https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&logo=javascript&logoColor=1e1e2e) |
 | [**Deluge**](https://github.com/Real-Fruit-Snacks/Deluge) | Nmap & RustScan output parser with color-coded reports and multi-format export | ![Python](https://img.shields.io/badge/-Python-a6e3a1?style=flat-square&logo=python&logoColor=1e1e2e) |
 | [**Surge**](https://github.com/Real-Fruit-Snacks/Surge) | Offline-first command reference with fuzzy search & variable substitution | ![JS](https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&logo=javascript&logoColor=1e1e2e) |
 | [**Fathom**](https://github.com/Real-Fruit-Snacks/Fathom) | Lightning-fast offline man pages browser with TLDR summaries | ![JS](https://img.shields.io/badge/-JavaScript-fab387?style=flat-square&logo=javascript&logoColor=1e1e2e) |
@@ -117,14 +119,14 @@
 
 | Tool | What It Does | Language |
 |------|-------------|----------|
+| [**Tidemark**](https://github.com/Real-Fruit-Snacks/Tidemark) | Obsidian plugin — replace variables in markdown with YAML frontmatter values | ![TS](https://img.shields.io/badge/-TypeScript-b4befe?style=flat-square&logo=typescript&logoColor=1e1e2e) |
 | [**LigoloSupport**](https://github.com/Real-Fruit-Snacks/LigoloSupport) | One-command ligolo-ng tunnel setup | ![Shell](https://img.shields.io/badge/-Shell-cba6f7?style=flat-square&logo=gnubash&logoColor=1e1e2e) |
-| [**Frontmatter-Variables**](https://github.com/Real-Fruit-Snacks/Frontmatter-Variables) | VS Code extension for markdown variable substitution | ![TS](https://img.shields.io/badge/-TypeScript-b4befe?style=flat-square&logo=typescript&logoColor=1e1e2e) |
 
 ---
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/Real-Fruit-Snacks?style=flat-square&amp;color=89b4fa&amp;labelColor=1e1e2e&amp;label=Followers" alt="Followers"/>
-  <img src="https://img.shields.io/badge/Repos-18-a6e3a1?style=flat-square&amp;labelColor=1e1e2e" alt="Repos"/>
+  <img src="https://img.shields.io/badge/Repos-19-a6e3a1?style=flat-square&amp;labelColor=1e1e2e" alt="Repos"/>
   <img src="https://img.shields.io/badge/Focus-Offensive%20Security-f38ba8?style=flat-square&amp;labelColor=1e1e2e" alt="Focus"/>
 </p>
 
