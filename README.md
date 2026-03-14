@@ -9,6 +9,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-a6e3a1?style=for-the-badge&logo=python&logoColor=1e1e2e" alt="Python"/>
   <img src="https://img.shields.io/badge/Go-6c8ec7?style=for-the-badge&logo=go&logoColor=1e1e2e" alt="Go"/>
+  <img src="https://img.shields.io/badge/C-f9e2af?style=for-the-badge&logo=c&logoColor=1e1e2e" alt="C"/>
+  <img src="https://img.shields.io/badge/Assembly-f38ba8?style=for-the-badge&logo=assemblyscript&logoColor=1e1e2e" alt="Assembly"/>
   <img src="https://img.shields.io/badge/JavaScript-fab387?style=for-the-badge&logo=javascript&logoColor=1e1e2e" alt="JavaScript"/>
   <img src="https://img.shields.io/badge/TypeScript-b4befe?style=for-the-badge&logo=typescript&logoColor=1e1e2e" alt="TypeScript"/>
   <img src="https://img.shields.io/badge/Shell-cba6f7?style=for-the-badge&logo=gnubash&logoColor=1e1e2e" alt="Shell"/>
@@ -105,6 +107,15 @@
 | [**Spillway**](https://github.com/Real-Fruit-Snacks/Spillway) | Reverse/bind FUSE filesystem mount over TLS 1.3 | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
 | [**Undertow**](https://github.com/Real-Fruit-Snacks/Undertow) | Statically-linked SSH server — reverse shells, SFTP, port forwarding | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
 
+<h2>Shells & Implants</h2>
+
+| Tool | What It Does | Language |
+|------|-------------|----------|
+| [**Vapor**](https://github.com/Real-Fruit-Snacks/Vapor) | ChaCha20-Poly1305 encrypted reverse shell + Hell's Gate process injector in pure x86_64 NASM | ![ASM](https://img.shields.io/badge/-Assembly-f38ba8?style=flat&logo=assemblyscript&logoColor=1e1e2e) |
+| [**Grotto**](https://github.com/Real-Fruit-Snacks/Grotto) | ChaCha20-Poly1305 encrypted netcat in pure x86_64 NASM — cross-platform, zero dependencies, ~8 KB | ![ASM](https://img.shields.io/badge/-Assembly-f38ba8?style=flat&logo=assemblyscript&logoColor=1e1e2e) |
+| [**Dew**](https://github.com/Real-Fruit-Snacks/Dew) | Encrypted HTTPS reverse shell — XChaCha20-Poly1305 over TLS, ~37 KB | ![C](https://img.shields.io/badge/-C-f9e2af?style=flat&logo=c&logoColor=1e1e2e) |
+| [**Droplet**](https://github.com/Real-Fruit-Snacks/Droplet) | Encrypted HTTPS reverse shell for Windows — ~50 KB C implant with interactive Python listener | ![C](https://img.shields.io/badge/-C-f9e2af?style=flat&logo=c&logoColor=1e1e2e) |
+
 <h2>Enumeration & Exploitation</h2>
 
 | Tool | What It Does | Language |
@@ -125,6 +136,7 @@
 | [**Deluge**](https://github.com/Real-Fruit-Snacks/Deluge) | Nmap & RustScan output parser with color-coded reports and multi-format export | ![Python](https://img.shields.io/badge/-Python-a6e3a1?style=flat&logo=python&logoColor=1e1e2e) |
 | [**Surge**](https://github.com/Real-Fruit-Snacks/Surge) | Offline-first command reference with fuzzy search & variable substitution | ![JS](https://img.shields.io/badge/-JavaScript-fab387?style=flat&logo=javascript&logoColor=1e1e2e) |
 | [**Fathom**](https://github.com/Real-Fruit-Snacks/Fathom) | Lightning-fast offline man pages browser with TLDR summaries | ![JS](https://img.shields.io/badge/-JavaScript-fab387?style=flat&logo=javascript&logoColor=1e1e2e) |
+| [**Cascade**](https://github.com/Real-Fruit-Snacks/Cascade) | Fast, beautiful markdown note-taking app for personal knowledge management — Tauri, React, CodeMirror | ![TS](https://img.shields.io/badge/-TypeScript-b4befe?style=flat&logo=typescript&logoColor=1e1e2e) |
 | [**Sunken-Archive**](https://github.com/Real-Fruit-Snacks/Sunken-Archive) | Personal knowledge base & digital garden built on Quartz | ![TS](https://img.shields.io/badge/-TypeScript-b4befe?style=flat&logo=typescript&logoColor=1e1e2e) |
 
 <h2>Utilities</h2>
@@ -144,7 +156,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/Real-Fruit-Snacks?style=flat&color=89b4fa&labelColor=1e1e2e&label=Followers" alt="Followers"/>
-  <img src="https://img.shields.io/badge/Repos-19-a6e3a1?style=flat&labelColor=1e1e2e" alt="Repos"/>
+  <img src="https://img.shields.io/badge/Repos-24-a6e3a1?style=flat&labelColor=1e1e2e" alt="Repos"/>
   <img src="https://img.shields.io/badge/Focus-Offensive%20Security-f38ba8?style=flat&labelColor=1e1e2e" alt="Focus"/>
 </p>
 
