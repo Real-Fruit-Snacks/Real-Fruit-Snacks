@@ -70,16 +70,16 @@
     </td>
     <td align="center" valign="top" width="50%">
       <br/>
-      <a href="https://github.com/Real-Fruit-Snacks/Shallows">
-        <img src="https://img.shields.io/badge/Shallows-1e1e2e?style=for-the-badge&logo=github&logoColor=cdd6f4" alt="Shallows"/>
+      <a href="https://github.com/Real-Fruit-Snacks/Vapor">
+        <img src="https://img.shields.io/badge/Vapor-1e1e2e?style=for-the-badge&logo=github&logoColor=cdd6f4" alt="Vapor"/>
       </a>
       <br/><br/>
-      Browser-native Linux terminals — no servers, no installs, no accounts, just open and type
+      Encrypted reverse shell + Hell's Gate process injector in pure x86_64 NASM assembly
       <br/><br/>
-      <a href="https://real-fruit-snacks.github.io/Shallows/">
+      <a href="https://real-fruit-snacks.github.io/Vapor/">
         <img src="https://img.shields.io/badge/Docs-94e2d5?style=for-the-badge&logo=bookstack&logoColor=1e1e2e" alt="Docs"/>
       </a>
-      <img src="https://img.shields.io/badge/JavaScript-fab387?style=for-the-badge&logo=javascript&logoColor=1e1e2e" alt="JS"/>
+      <img src="https://img.shields.io/badge/Assembly-f38ba8?style=for-the-badge&logo=assemblyscript&logoColor=1e1e2e" alt="ASM"/>
       <br/><br/>
     </td>
   </tr>
