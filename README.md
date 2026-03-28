@@ -106,6 +106,8 @@
 | [**Wellspring**](https://github.com/Real-Fruit-Snacks/Wellspring) | Payload delivery server — token-gated access, 12 delivery methods, AES-256-GCM encryption at rest | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
 | [**Spillway**](https://github.com/Real-Fruit-Snacks/Spillway) | Reverse/bind FUSE filesystem mount over TLS 1.3 | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
 | [**Undertow**](https://github.com/Real-Fruit-Snacks/Undertow) | Statically-linked SSH server — reverse shells, SFTP, port forwarding | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
+| [**Slipstream**](https://github.com/Real-Fruit-Snacks/Slipstream) | SSH wrapper for red team operations — PTY control, session management, tunnel management, file transfers | ![Rust](https://img.shields.io/badge/-Rust-dea584?style=flat&logo=rust&logoColor=1e1e2e) |
+| [**Depth**](https://github.com/Real-Fruit-Snacks/Depth) | Complete SSH-2.0 protocol implementation — ChaCha20-Poly1305, Ed25519, X25519, SFTP, PTY, 94 KB static ELF | ![ASM](https://img.shields.io/badge/-Assembly-f38ba8?style=flat&logo=assemblyscript&logoColor=1e1e2e) |
 
 <h2>Shells & Implants</h2>
 
@@ -115,6 +117,7 @@
 | [**Grotto**](https://github.com/Real-Fruit-Snacks/Grotto) | ChaCha20-Poly1305 encrypted netcat in pure x86_64 NASM — cross-platform, zero dependencies, ~8 KB | ![ASM](https://img.shields.io/badge/-Assembly-f38ba8?style=flat&logo=assemblyscript&logoColor=1e1e2e) |
 | [**Dew**](https://github.com/Real-Fruit-Snacks/Dew) | Encrypted HTTPS reverse shell — XChaCha20-Poly1305 over TLS, ~37 KB | ![C](https://img.shields.io/badge/-C-f9e2af?style=flat&logo=c&logoColor=1e1e2e) |
 | [**Droplet**](https://github.com/Real-Fruit-Snacks/Droplet) | Encrypted HTTPS reverse shell for Windows — ~50 KB C implant with interactive Python listener | ![C](https://img.shields.io/badge/-C-f9e2af?style=flat&logo=c&logoColor=1e1e2e) |
+| [**Undercurrent**](https://github.com/Real-Fruit-Snacks/Undercurrent) | io_uring stealth implant loader — ChaCha20-Poly1305, ~4.2 KB shellcode, invisible to syscall monitoring | ![ASM](https://img.shields.io/badge/-Assembly-f38ba8?style=flat&logo=assemblyscript&logoColor=1e1e2e) |
 
 <h2>Enumeration & Exploitation</h2>
 
@@ -138,6 +141,15 @@
 | [**Fathom**](https://github.com/Real-Fruit-Snacks/Fathom) | Lightning-fast offline man pages browser with TLDR summaries | ![JS](https://img.shields.io/badge/-JavaScript-fab387?style=flat&logo=javascript&logoColor=1e1e2e) |
 | [**Cascade**](https://github.com/Real-Fruit-Snacks/Cascade) | Fast, beautiful markdown note-taking app for personal knowledge management — Tauri, React, CodeMirror | ![TS](https://img.shields.io/badge/-TypeScript-b4befe?style=flat&logo=typescript&logoColor=1e1e2e) |
 | [**Sunken-Archive**](https://github.com/Real-Fruit-Snacks/Sunken-Archive) | Personal knowledge base & digital garden built on Quartz | ![TS](https://img.shields.io/badge/-TypeScript-b4befe?style=flat&logo=typescript&logoColor=1e1e2e) |
+| [**HydroShot**](https://github.com/Real-Fruit-Snacks/HydroShot) | Fast, lightweight screenshot capture and annotation tool | ![Rust](https://img.shields.io/badge/-Rust-dea584?style=flat&logo=rust&logoColor=1e1e2e) |
+| [**Tidepool**](https://github.com/Real-Fruit-Snacks/Tidepool) | Interactive terminal portfolio — explore developer profiles through real shell commands in the browser | ![JS](https://img.shields.io/badge/-JavaScript-fab387?style=flat&logo=javascript&logoColor=1e1e2e) |
+| [**Deadwater**](https://github.com/Real-Fruit-Snacks/Deadwater) | Open research platform for indexing, searching, and serving computational research publications | ![TS](https://img.shields.io/badge/-TypeScript-b4befe?style=flat&logo=typescript&logoColor=1e1e2e) |
+
+<h2>AI & Enterprise</h2>
+
+| Tool | What It Does | Language |
+|------|-------------|----------|
+| [**armsforge**](https://github.com/Real-Fruit-Snacks/armsforge) | Enterprise-grade AI-powered security platform with intelligent automation and Claude Code integration | ![TS](https://img.shields.io/badge/-TypeScript-b4befe?style=flat&logo=typescript&logoColor=1e1e2e) |
 
 <h2>Utilities</h2>
 
@@ -156,7 +168,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/Real-Fruit-Snacks?style=flat&color=89b4fa&labelColor=1e1e2e&label=Followers" alt="Followers"/>
-  <img src="https://img.shields.io/badge/Repos-24-a6e3a1?style=flat&labelColor=1e1e2e" alt="Repos"/>
+  <img src="https://img.shields.io/badge/Repos-31-a6e3a1?style=flat&labelColor=1e1e2e" alt="Repos"/>
   <img src="https://img.shields.io/badge/Focus-Offensive%20Security-f38ba8?style=flat&labelColor=1e1e2e" alt="Focus"/>
 </p>
 
