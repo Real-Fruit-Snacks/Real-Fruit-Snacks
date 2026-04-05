@@ -101,6 +101,8 @@
 
 | Tool | What It Does | Language |
 |------|-------------|----------|
+| [**Flux**](https://github.com/Real-Fruit-Snacks/Flux) | Swiss Army Netcat — single static Rust binary replacing nc, ncat, socat, pwncat. TLS/Noise encryption, auto-PTY shells, file transfer, SOCKS5, scanning | ![Rust](https://img.shields.io/badge/-Rust-dea584?style=flat&logo=rust&logoColor=1e1e2e) |
+| [**Conduit**](https://github.com/Real-Fruit-Snacks/Conduit) | SOCAT network relay with kernel-level process masquerading — argument hiding, multi-platform stealth | ![C](https://img.shields.io/badge/-C-f9e2af?style=flat&logo=c&logoColor=1e1e2e) |
 | [**Aquifer**](https://github.com/Real-Fruit-Snacks/Aquifer) | Linux post-exploitation framework with kernel namespace isolation and polymorphic beacons | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
 | [**Siphon**](https://github.com/Real-Fruit-Snacks/Siphon) | Lightweight C2 framework — ECDH P-256 forward secrecy, AES-256-GCM, uTLS fingerprinting | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
 | [**Wellspring**](https://github.com/Real-Fruit-Snacks/Wellspring) | Payload delivery server — token-gated access, 12 delivery methods, AES-256-GCM encryption at rest | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
@@ -168,7 +170,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/Real-Fruit-Snacks?style=flat&color=89b4fa&labelColor=1e1e2e&label=Followers" alt="Followers"/>
-  <img src="https://img.shields.io/badge/Repos-31-a6e3a1?style=flat&labelColor=1e1e2e" alt="Repos"/>
+  <img src="https://img.shields.io/badge/Repos-34-a6e3a1?style=flat&labelColor=1e1e2e" alt="Repos"/>
   <img src="https://img.shields.io/badge/Focus-Offensive%20Security-f38ba8?style=flat&labelColor=1e1e2e" alt="Focus"/>
 </p>
 
