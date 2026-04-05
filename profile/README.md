@@ -1,6 +1,4 @@
-import codecs
-
-content = """<div align="center">
+<div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Real-Fruit-Snacks/Real-Fruit-Snacks/main/docs/assets/logo-dark.svg">
@@ -127,12 +125,3 @@ Platform tools and automation.
 All tools are for authorized security testing and educational purposes only.
 
 </div>
-"""
-
-with codecs.open("/tmp/org-redesign/profile/README.md", "w", "utf-8") as f:
-    f.write(content)
-
-lines = content.count("\n")
-tables = content.count("|:-----|")
-badges = content.count("style=flat-square")
-print(f"Written: {lines} lines, {tables} tables, {badges} category badges")
