@@ -8,9 +8,9 @@
 
 <br>
 
-Building offensive security tools \u2014 one wave at a time.
+Building offensive security tools — one wave at a time.
 
-**34 tools** across 7 categories. Rust, Go, C, Assembly, Python, TypeScript.
+**38 tools** across 7 categories. Rust, Go, C, Assembly, Python, TypeScript.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
@@ -31,6 +31,7 @@ Implant frameworks, payload delivery, and post-exploitation infrastructure.
 | Tool | Description |
 |:-----|:-----------|
 | **[Aquifer](https://github.com/Real-Fruit-Snacks/Aquifer)** | Linux post-exploitation with kernel namespace isolation and 36 stealth modules. *Go* |
+| **[Kraken](https://github.com/Real-Fruit-Snacks/Kraken)** | OPSEC-first C2 framework with modular implants, mesh networking, and multi-transport. *Rust* |
 | **[Siphon](https://github.com/Real-Fruit-Snacks/Siphon)** | Lightweight C2 with ECDH P-256 forward secrecy and uTLS fingerprinting. *Go* |
 | **[Spillway](https://github.com/Real-Fruit-Snacks/Spillway)** | Reverse/bind FUSE filesystem mount over TLS 1.3. *Go* |
 | **[Undertow](https://github.com/Real-Fruit-Snacks/Undertow)** | Static SSH server with reverse/bind shells, SFTP, and TLS wrapping. *Go* |
@@ -61,17 +62,20 @@ Encrypted tunnels, relays, and protocol implementations.
 | **[Conduit](https://github.com/Real-Fruit-Snacks/Conduit)** | SOCAT relay with kernel-level process masquerading and 50+ channel types. *C* |
 | **[Depth](https://github.com/Real-Fruit-Snacks/Depth)** | Complete SSH-2.0 in pure x86_64 NASM assembly. 94 KB static ELF. *Assembly* |
 | **[Flux](https://github.com/Real-Fruit-Snacks/Flux)** | Swiss Army Netcat replacing nc, ncat, socat, and pwncat. Single static binary. *Rust* |
+| **[Neap](https://github.com/Real-Fruit-Snacks/Neap)** | Static SSH server with reverse/bind shells, SFTP, TLS wrapping, and SNI spoofing. *Rust* |
 | **[Slipstream](https://github.com/Real-Fruit-Snacks/Slipstream)** | SSH wrapper with tunnel management, file transfers, and session logging. *Rust* |
 
 ---
 
 ## ![Operations](https://img.shields.io/badge/Enumeration%20%26%20Exploitation-94e2d5?style=flat-square) Enumeration & Exploitation
 
-Active Directory, credential attacks, and privilege escalation.
+Active Directory, credential attacks, privilege escalation, and offensive analysis.
 
 | Tool | Description |
 |:-----|:-----------|
+| **[Abyss](https://github.com/Real-Fruit-Snacks/Abyss)** | Offline forensic analysis — extract credentials from disk images and memory dumps. *Rust* |
 | **[Deluge](https://github.com/Real-Fruit-Snacks/Deluge)** | Nmap and RustScan output parser with color-coded reports. *Python* |
+| **[Flood](https://github.com/Real-Fruit-Snacks/Flood)** | Async web fuzzer with recursive discovery, auto-throttle, and FUZZ keyword placement. *Rust* |
 | **[Maelstrom](https://github.com/Real-Fruit-Snacks/Maelstrom)** | NetExec wrapper combining 35+ AD enumeration modules into one command. *Python* |
 | **[Rapids](https://github.com/Real-Fruit-Snacks/Rapids)** | Credential spraying across 28 protocol modules with pass-the-hash. *Python* |
 | **[Riptide](https://github.com/Real-Fruit-Snacks/Riptide)** | Collaborative browser terminal with real-time sync and credential vault. *TypeScript* |
