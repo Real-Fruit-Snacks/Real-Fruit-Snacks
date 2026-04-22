@@ -7,6 +7,12 @@
 </p>
 
 <p align="center">
+  <a href="https://real-fruit-snacks.github.io/">
+    <img src="https://img.shields.io/badge/%E2%86%92%20Browse%20all%2043%20projects-real--fruit--snacks.github.io-cba6f7?style=for-the-badge&labelColor=1e1e2e" alt="Portfolio"/>
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Python-a6e3a1?style=for-the-badge&logo=python&logoColor=1e1e2e" alt="Python"/>
   <img src="https://img.shields.io/badge/Go-6c8ec7?style=for-the-badge&logo=go&logoColor=1e1e2e" alt="Go"/>
   <img src="https://img.shields.io/badge/C-f9e2af?style=for-the-badge&logo=c&logoColor=1e1e2e" alt="C"/>
