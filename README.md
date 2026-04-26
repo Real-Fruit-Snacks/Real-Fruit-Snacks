@@ -177,10 +177,10 @@ A sail-themed quartet — same idea (BusyBox-style single-binary shell toolkits)
 
 | Tool | What It Does | Language |
 |------|-------------|----------|
-| [**rill**](https://github.com/Real-Fruit-Snacks/rill) | BusyBox-style multi-call binary in pure x86_64 NASM — 41 Unix utilities, ~108 KB static ELF, direct syscalls, no libc | ![ASM](https://img.shields.io/badge/-Assembly-f38ba8?style=flat&logo=assemblyscript&logoColor=1e1e2e) |
-| [**topsail**](https://github.com/Real-Fruit-Snacks/topsail) | Single-file BusyBox-like multi-call binary in Go — easy cross-compile, static binary | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
-| [**jib**](https://github.com/Real-Fruit-Snacks/jib) | BusyBox-style multi-call binary in Rust — 73 Unix utilities + `jq`/`http`/`dig` in a ~2 MB executable | ![Rust](https://img.shields.io/badge/-Rust-dea584?style=flat&logo=rust&logoColor=1e1e2e) |
-| [**mainsail**](https://github.com/Real-Fruit-Snacks/mainsail) | BusyBox-style multi-call binary in Python — 73 Unix utilities, ~5–7 MB, native on Linux, Windows, and macOS | ![Python](https://img.shields.io/badge/-Python-a6e3a1?style=flat&logo=python&logoColor=1e1e2e) |
+| [**Rill**](https://github.com/Real-Fruit-Snacks/Rill) | BusyBox-style multi-call binary in pure x86_64 NASM — 41 Unix utilities, ~108 KB static ELF, direct syscalls, no libc | ![ASM](https://img.shields.io/badge/-Assembly-f38ba8?style=flat&logo=assemblyscript&logoColor=1e1e2e) |
+| [**Topsail**](https://github.com/Real-Fruit-Snacks/Topsail) | Single-file BusyBox-like multi-call binary in Go — easy cross-compile, static binary | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
+| [**Jib**](https://github.com/Real-Fruit-Snacks/Jib) | BusyBox-style multi-call binary in Rust — 73 Unix utilities + `jq`/`http`/`dig` in a ~2 MB executable | ![Rust](https://img.shields.io/badge/-Rust-dea584?style=flat&logo=rust&logoColor=1e1e2e) |
+| [**Mainsail**](https://github.com/Real-Fruit-Snacks/Mainsail) | BusyBox-style multi-call binary in Python — 73 Unix utilities, ~5–7 MB, native on Linux, Windows, and macOS | ![Python](https://img.shields.io/badge/-Python-a6e3a1?style=flat&logo=python&logoColor=1e1e2e) |
 
 <h2>Utilities</h2>
 
