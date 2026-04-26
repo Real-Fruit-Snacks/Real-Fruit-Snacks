@@ -132,10 +132,10 @@ A sail-themed quartet of BusyBox-style toolkits. Same idea, four languages, four
 
 | Tool | Description |
 |:-----|:-----------|
-| **[Jib](https://github.com/Real-Fruit-Snacks/Jib)** | BusyBox-style multi-call binary in Rust — 73 Unix utilities + `jq`/`http`/`dig` in ~2 MB. *Rust* |
-| **[Mainsail](https://github.com/Real-Fruit-Snacks/Mainsail)** | BusyBox-style multi-call binary in Python — 73 Unix utilities, ~5–7 MB, native on Linux/Windows/macOS. *Python* |
-| **[Rill](https://github.com/Real-Fruit-Snacks/Rill)** | BusyBox-style multi-call binary in pure x86_64 NASM — 41 utilities, ~108 KB static ELF, direct syscalls, no libc. *Assembly* |
-| **[Topsail](https://github.com/Real-Fruit-Snacks/Topsail)** | Single-file BusyBox-like multi-call binary in Go — easy cross-compile, static binary. *Go* |
+| **[Jib](https://github.com/Real-Fruit-Snacks/Jib)** | BusyBox-style multi-call binary in Rust — 73 Unix utilities + `jq`/`http`/`dig`, **~2.4 MB avg** (1.4 MB slim → 3.7 MB full) across 11 platform builds. *Rust* |
+| **[Mainsail](https://github.com/Real-Fruit-Snacks/Mainsail)** | BusyBox-style multi-call binary in Python — 73 Unix utilities, **~5.5 MB** native bundles or **~110 KB** .pyz with system Python. Linux/Windows/macOS. *Python* |
+| **[Rill](https://github.com/Real-Fruit-Snacks/Rill)** | BusyBox-style multi-call binary in pure x86_64 NASM — 41 utilities, **~34 KB** static ELF, direct syscalls, no libc. *Assembly* |
+| **[Topsail](https://github.com/Real-Fruit-Snacks/Topsail)** | Single-file BusyBox-like multi-call binary in Go — **~3.4 MB** per platform binary, .deb/.rpm/.apk packages too. *Go* |
 
 ---
 
