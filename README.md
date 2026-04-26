@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://real-fruit-snacks.github.io/">
-    <img src="https://img.shields.io/badge/%E2%86%92%20Browse%20all%2043%20projects-real--fruit--snacks.github.io-cba6f7?style=for-the-badge&labelColor=1e1e2e" alt="Portfolio"/>
+    <img src="https://img.shields.io/badge/%E2%86%92%20Browse%20all%2048%20projects-real--fruit--snacks.github.io-cba6f7?style=for-the-badge&labelColor=1e1e2e" alt="Portfolio"/>
   </a>
 </p>
 
@@ -171,6 +171,17 @@
 |------|-------------|----------|
 | [**armsforge**](https://github.com/Real-Fruit-Snacks/armsforge) | AI-powered security platform — intelligent automation, Claude Code integration, workflow orchestration for offensive operations | ![TS](https://img.shields.io/badge/-TypeScript-b4befe?style=flat&logo=typescript&logoColor=1e1e2e) |
 
+<h2>Multi-Call Binaries</h2>
+
+A sail-themed quartet — same idea (BusyBox-style single-binary shell toolkits), four different languages, four different size/portability tradeoffs.
+
+| Tool | What It Does | Language |
+|------|-------------|----------|
+| [**rill**](https://github.com/Real-Fruit-Snacks/rill) | BusyBox-style multi-call binary in pure x86_64 NASM — 41 Unix utilities, ~108 KB static ELF, direct syscalls, no libc | ![ASM](https://img.shields.io/badge/-Assembly-f38ba8?style=flat&logo=assemblyscript&logoColor=1e1e2e) |
+| [**topsail**](https://github.com/Real-Fruit-Snacks/topsail) | Single-file BusyBox-like multi-call binary in Go — easy cross-compile, static binary | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
+| [**jib**](https://github.com/Real-Fruit-Snacks/jib) | BusyBox-style multi-call binary in Rust — 73 Unix utilities + `jq`/`http`/`dig` in a ~2 MB executable | ![Rust](https://img.shields.io/badge/-Rust-dea584?style=flat&logo=rust&logoColor=1e1e2e) |
+| [**mainsail**](https://github.com/Real-Fruit-Snacks/mainsail) | BusyBox-style multi-call binary in Python — 73 Unix utilities, ~5–7 MB, native on Linux, Windows, and macOS | ![Python](https://img.shields.io/badge/-Python-a6e3a1?style=flat&logo=python&logoColor=1e1e2e) |
+
 <h2>Utilities</h2>
 
 | Tool | What It Does | Language |
@@ -195,7 +206,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/Real-Fruit-Snacks?style=flat&color=89b4fa&labelColor=1e1e2e&label=Followers" alt="Followers"/>
-  <img src="https://img.shields.io/badge/Repos-43-a6e3a1?style=flat&labelColor=1e1e2e" alt="Repos"/>
+  <img src="https://img.shields.io/badge/Repos-48-a6e3a1?style=flat&labelColor=1e1e2e" alt="Repos"/>
   <img src="https://img.shields.io/badge/Focus-Offensive%20Security-f38ba8?style=flat&labelColor=1e1e2e" alt="Focus"/>
 </p>
 

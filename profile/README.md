@@ -10,7 +10,7 @@
 
 Building offensive security tools — one wave at a time.
 
-**42 tools** across 8 categories. Rust, Go, C, Assembly, Python, TypeScript.
+**46 tools** across 9 categories. Rust, Go, C, Assembly, Python, TypeScript.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
@@ -123,6 +123,19 @@ Platform tools and automation.
 |:-----|:-----------|
 | **[armsforge](https://github.com/Real-Fruit-Snacks/armsforge)** | AI-powered security platform with Claude Code integration. *TypeScript* |
 | **[Culvert](https://github.com/Real-Fruit-Snacks/Culvert)** | Pivot under the obstruction — one-command ligolo-ng tunnel setup with TUN, routing, and WebUI. *Shell* |
+
+---
+
+## ![Toolboxes](https://img.shields.io/badge/Multi--Call%20Binaries-89b4fa?style=flat-square) Multi-Call Binaries
+
+A sail-themed quartet of BusyBox-style toolkits. Same idea, four languages, four tradeoffs.
+
+| Tool | Description |
+|:-----|:-----------|
+| **[jib](https://github.com/Real-Fruit-Snacks/jib)** | BusyBox-style multi-call binary in Rust — 73 Unix utilities + `jq`/`http`/`dig` in ~2 MB. *Rust* |
+| **[mainsail](https://github.com/Real-Fruit-Snacks/mainsail)** | BusyBox-style multi-call binary in Python — 73 Unix utilities, ~5–7 MB, native on Linux/Windows/macOS. *Python* |
+| **[rill](https://github.com/Real-Fruit-Snacks/rill)** | BusyBox-style multi-call binary in pure x86_64 NASM — 41 utilities, ~108 KB static ELF, direct syscalls, no libc. *Assembly* |
+| **[topsail](https://github.com/Real-Fruit-Snacks/topsail)** | Single-file BusyBox-like multi-call binary in Go — easy cross-compile, static binary. *Go* |
 
 ---
 
