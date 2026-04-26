@@ -10,7 +10,7 @@
 
 Building offensive security tools — one wave at a time.
 
-**38 tools** across 7 categories. Rust, Go, C, Assembly, Python, TypeScript.
+**42 tools** across 8 categories. Rust, Go, C, Assembly, Python, TypeScript.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
@@ -76,6 +76,7 @@ Active Directory, credential attacks, privilege escalation, and offensive analys
 | **[Abyss](https://github.com/Real-Fruit-Snacks/Abyss)** | Offline forensic analysis — extract credentials from disk images and memory dumps. *Rust* |
 | **[Deluge](https://github.com/Real-Fruit-Snacks/Deluge)** | Nmap and RustScan output parser with color-coded reports. *Python* |
 | **[Flood](https://github.com/Real-Fruit-Snacks/Flood)** | Async web fuzzer with recursive discovery, auto-throttle, and FUZZ keyword placement. *Rust* |
+| **[Lure](https://github.com/Real-Fruit-Snacks/Lure)** | SMB hash bait — drops poisoned `.url`/`.scf`/`.xml` payloads to coerce NTLM auth via Responder. *Python* |
 | **[Maelstrom](https://github.com/Real-Fruit-Snacks/Maelstrom)** | NetExec wrapper combining 35+ AD enumeration modules into one command. *Python* |
 | **[Rapids](https://github.com/Real-Fruit-Snacks/Rapids)** | Credential spraying across 28 protocol modules with pass-the-hash. *Python* |
 | **[Riptide](https://github.com/Real-Fruit-Snacks/Riptide)** | Collaborative browser terminal with real-time sync and credential vault. *TypeScript* |
@@ -110,6 +111,7 @@ Knowledge bases, documentation browsers, and interactive environments.
 | **[Shallows](https://github.com/Real-Fruit-Snacks/Shallows)** | Browser-native Linux terminals powered by x86 emulation. *JavaScript* |
 | **[Sunken-Archive](https://github.com/Real-Fruit-Snacks/Sunken-Archive)** | Knowledge base and digital garden built on Quartz. *TypeScript* |
 | **[Tidepool](https://github.com/Real-Fruit-Snacks/Tidepool)** | Interactive terminal portfolio via xterm.js. *JavaScript* |
+| **[x86-assembly-lab](https://github.com/Real-Fruit-Snacks/x86-assembly-lab)** | Interactive x86 assembly lab — simulator, stack visualizer, register quiz, tutorials. *HTML* |
 
 ---
 
@@ -120,12 +122,24 @@ Platform tools and automation.
 | Tool | Description |
 |:-----|:-----------|
 | **[armsforge](https://github.com/Real-Fruit-Snacks/armsforge)** | AI-powered security platform with Claude Code integration. *TypeScript* |
-| **[LigoloSupport](https://github.com/Real-Fruit-Snacks/LigoloSupport)** | One-command ligolo-ng tunnel setup. Zero to pivoting in 30 seconds. *Shell* |
+| **[Culvert](https://github.com/Real-Fruit-Snacks/Culvert)** | Pivot under the obstruction — one-command ligolo-ng tunnel setup with TUN, routing, and WebUI. *Shell* |
+
+---
+
+## ![Games](https://img.shields.io/badge/Games-f9e2af?style=flat-square) Games
+
+Browser-based games — vanilla HTML, single-file builds, zero installs.
+
+| Tool | Description |
+|:-----|:-----------|
+| **[Blueprint](https://github.com/Real-Fruit-Snacks/Blueprint)** | Browser-based incremental factory game — build, automate, prestige, publish. Zero-dependency. *JavaScript* |
+| **[Crownfall](https://github.com/Real-Fruit-Snacks/Crownfall)** | Pixel-art medieval wave-defense incremental built as a single HTML file. *HTML* |
+| **[Tower-Defense](https://github.com/Real-Fruit-Snacks/Tower-Defense)** | Cyberpunk neon tower defense — 6 elements, 14 towers, procedural campaign, roguelite unlocks. *TypeScript* |
 
 ---
 
 <div align="center">
 
-All tools are for authorized security testing and educational purposes only.
+All security tools are for authorized testing and educational purposes only.
 
 </div>
