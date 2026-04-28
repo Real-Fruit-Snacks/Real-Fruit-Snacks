@@ -10,13 +10,14 @@
 
 Building offensive security tools — one wave at a time.
 
-**46 tools** across 9 categories. Rust, Go, C, Assembly, Python, TypeScript.
+**47 tools** across 9 categories. Rust, Go, C, Assembly, Lua, Python, TypeScript.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-DEA584?style=flat&logo=rust&logoColor=black)
 ![C](https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=black)
 ![Assembly](https://img.shields.io/badge/Assembly-6E4C13?style=flat)
+![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat&logo=lua&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat&logo=gnubash&logoColor=white)
 
@@ -128,12 +129,13 @@ Platform tools and automation.
 
 ## ![Toolboxes](https://img.shields.io/badge/Multi--Call%20Binaries-89b4fa?style=flat-square) Multi-Call Binaries
 
-A sail-themed quartet of BusyBox-style toolkits. Same idea, four languages, four tradeoffs.
+A sail-themed quintet of BusyBox-style toolkits. Same idea, five languages, five tradeoffs.
 
 | Tool | Description |
 |:-----|:-----------|
 | **[Jib](https://github.com/Real-Fruit-Snacks/Jib)** | BusyBox-style multi-call binary in Rust — 73 Unix utilities + `jq`/`http`/`dig`, **~2.4 MB avg** (1.4 MB slim → 3.7 MB full) across 11 platform builds. *Rust* |
 | **[Mainsail](https://github.com/Real-Fruit-Snacks/Mainsail)** | BusyBox-style multi-call binary in Python — 73 Unix utilities, **~5.5 MB** native bundles or **~110 KB** .pyz with system Python. Linux/Windows/macOS. *Python* |
+| **[Moonraker](https://github.com/Real-Fruit-Snacks/Moonraker)** | BusyBox-style multi-call binary in Lua — 81 Unix utilities, **~1.2 MB** static executable via luastatic with embedded Lua VM. *Lua* |
 | **[Rill](https://github.com/Real-Fruit-Snacks/Rill)** | BusyBox-style multi-call binary in pure x86_64 NASM — 41 utilities, **~34 KB** static ELF, direct syscalls, no libc. *Assembly* |
 | **[Topsail](https://github.com/Real-Fruit-Snacks/Topsail)** | Single-file BusyBox-like multi-call binary in Go — **~3.4 MB** per platform binary, .deb/.rpm/.apk packages too. *Go* |
 

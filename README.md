@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://real-fruit-snacks.github.io/">
-    <img src="https://img.shields.io/badge/%E2%86%92%20Browse%20all%2048%20projects-real--fruit--snacks.github.io-cba6f7?style=for-the-badge&labelColor=1e1e2e" alt="Portfolio"/>
+    <img src="https://img.shields.io/badge/%E2%86%92%20Browse%20all%2049%20projects-real--fruit--snacks.github.io-cba6f7?style=for-the-badge&labelColor=1e1e2e" alt="Portfolio"/>
   </a>
 </p>
 
@@ -173,13 +173,14 @@
 
 <h2>Multi-Call Binaries</h2>
 
-A sail-themed quartet — same idea (BusyBox-style single-binary shell toolkits), four different languages, four different size/portability tradeoffs.
+A sail-themed quintet — same idea (BusyBox-style single-binary shell toolkits), five different languages, five different size/portability tradeoffs.
 
 | Tool | What It Does | Language |
 |------|-------------|----------|
 | [**Rill**](https://github.com/Real-Fruit-Snacks/Rill) | BusyBox-style multi-call binary in pure x86_64 NASM — 41 Unix utilities, **~34 KB** static ELF, direct syscalls, no libc | ![ASM](https://img.shields.io/badge/-Assembly-f38ba8?style=flat&logo=assemblyscript&logoColor=1e1e2e) |
-| [**Topsail**](https://github.com/Real-Fruit-Snacks/Topsail) | Single-file BusyBox-like multi-call binary in Go — **~3.4 MB** per platform (Linux/macOS/Windows × amd64/arm64), .deb/.rpm/.apk packages too | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
+| [**Moonraker**](https://github.com/Real-Fruit-Snacks/Moonraker) | BusyBox-style multi-call binary in Lua — 81 Unix utilities, **~1.2 MB** static executable via luastatic with embedded Lua VM | ![Lua](https://img.shields.io/badge/-Lua-89b4fa?style=flat&logo=lua&logoColor=1e1e2e) |
 | [**Jib**](https://github.com/Real-Fruit-Snacks/Jib) | BusyBox-style multi-call binary in Rust — 73 Unix utilities + `jq`/`http`/`dig`, **~2.4 MB avg** (1.4 MB slim → 3.7 MB full) across 11 platform builds | ![Rust](https://img.shields.io/badge/-Rust-dea584?style=flat&logo=rust&logoColor=1e1e2e) |
+| [**Topsail**](https://github.com/Real-Fruit-Snacks/Topsail) | Single-file BusyBox-like multi-call binary in Go — **~3.4 MB** per platform (Linux/macOS/Windows × amd64/arm64), .deb/.rpm/.apk packages too | ![Go](https://img.shields.io/badge/-Go-6c8ec7?style=flat&logo=go&logoColor=1e1e2e) |
 | [**Mainsail**](https://github.com/Real-Fruit-Snacks/Mainsail) | BusyBox-style multi-call binary in Python — 73 Unix utilities, **~5.5 MB** native bundles (or **~110 KB** .pyz with system Python), Linux/Windows/macOS | ![Python](https://img.shields.io/badge/-Python-a6e3a1?style=flat&logo=python&logoColor=1e1e2e) |
 
 <h2>Utilities</h2>
@@ -206,7 +207,7 @@ A sail-themed quartet — same idea (BusyBox-style single-binary shell toolkits)
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/Real-Fruit-Snacks?style=flat&color=89b4fa&labelColor=1e1e2e&label=Followers" alt="Followers"/>
-  <img src="https://img.shields.io/badge/Repos-48-a6e3a1?style=flat&labelColor=1e1e2e" alt="Repos"/>
+  <img src="https://img.shields.io/badge/Repos-49-a6e3a1?style=flat&labelColor=1e1e2e" alt="Repos"/>
   <img src="https://img.shields.io/badge/Focus-Offensive%20Security-f38ba8?style=flat&labelColor=1e1e2e" alt="Focus"/>
 </p>
 
