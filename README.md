@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Real-Fruit-Snacks/.github/main/assets/rfs-banner-dark.svg">
-  <img alt="RFS: Real tools. No filler. Beside it, a terminal listing screen-mark, port-sync, carify, certapi, identity-gen and powershell-toolbox" src="https://raw.githubusercontent.com/Real-Fruit-Snacks/.github/main/assets/rfs-banner-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Real-Fruit-Snacks/rfs-brand/main/assets/rfs-banner-dark.svg">
+  <img alt="RFS: Real tools. No filler. Beside it, a terminal listing screen-mark, port-sync, carify, certapi, identity-gen and powershell-toolbox" src="https://raw.githubusercontent.com/Real-Fruit-Snacks/rfs-brand/main/assets/rfs-banner-light.svg" width="100%">
 </picture>
 
 Small tools that each do one job: screenshots, video for the car, VPN ports, client certificates, throwaway identities. Mostly PowerShell, Rust and C#. The full list is at [real-fruit-snacks.github.io](https://real-fruit-snacks.github.io/).
