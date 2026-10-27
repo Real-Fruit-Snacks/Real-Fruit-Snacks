@@ -1,9 +1,9 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Real-Fruit-Snacks/rfs-brand/main/assets/rfs-banner-dark.svg">
-  <img alt="RFS: Real tools. No filler. Beside it, a terminal listing screen-mark, port-sync, carify, certapi, identity-gen and powershell-toolbox" src="https://raw.githubusercontent.com/Real-Fruit-Snacks/rfs-brand/main/assets/rfs-banner-light.svg" width="100%">
+  <img alt="RFS: Real tools. No filler. Beside it, a terminal listing screen-mark, port-sync, carify, certapi, identity-gen, amazon-order-sync and powershell-toolbox" src="https://raw.githubusercontent.com/Real-Fruit-Snacks/rfs-brand/main/assets/rfs-banner-light.svg" width="100%">
 </picture>
 
-Small tools that each do one job: screenshots, video for the car, VPN ports, client certificates, throwaway identities. Mostly PowerShell, Rust and C#. The full list is at [real-fruit-snacks.github.io](https://real-fruit-snacks.github.io/).
+Small tools that each do one job: screenshots, video for the car, VPN ports, client certificates, throwaway identities, your Amazon order history. Mostly PowerShell, Rust and C#. The full list is at [real-fruit-snacks.github.io](https://real-fruit-snacks.github.io/).
 
 ### Start here
 
@@ -14,6 +14,7 @@ Small tools that each do one job: screenshots, video for the car, VPN ports, cli
 | [`carify`](https://github.com/Real-Fruit-Snacks/carify) | Convert video for Uconnect USB playback, via ffmpeg | PowerShell, sh |
 | [`certapi`](https://github.com/Real-Fruit-Snacks/certapi) | mTLS API client for the Windows certificate store | C# |
 | [`identity-gen`](https://github.com/Real-Fruit-Snacks/identity-gen) | Offline generator for throwaway signup identities | HTML |
+| [`amazon-order-sync`](https://github.com/Real-Fruit-Snacks/amazon-order-sync) | Syncs your Amazon orders into local Markdown notes | JavaScript |
 | [`forge-framework`](https://github.com/Real-Fruit-Snacks/forge-framework) | Modular offensive-security framework with a console | Python |
 
 ### Everything else
