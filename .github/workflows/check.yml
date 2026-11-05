@@ -1,0 +1,38 @@
+name: check
+
+# The board is generated: fail if assets/board-*.svg no longer match art/make-board.py. And the links in
+# the README, monthly as well, because the repos and pages they point at move without this repo changing.
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '29 6 4 * *'
+  workflow_dispatch:
+
+jobs:
+  art:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Regenerate the board
+        run: |
+          python -m pip install --quiet -r art/requirements.txt
+          python art/make-board.py
+          git diff --exit-code -- assets/board-dark.svg assets/board-light.svg
+
+  links:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress --max-retries 4 --retry-wait-time 10 --timeout 30
+            --accept 200,206,429
+            './README.md'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
