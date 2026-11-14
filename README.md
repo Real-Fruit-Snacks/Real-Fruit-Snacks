@@ -31,6 +31,6 @@ Retired: `Kraken` · `Maelstrom` · `Rapids` · `Lure` · `Undertow`, the water 
 - "Tested on" is a list of real versions, not a promise.
 - Known issues sit above the fold.
 
-Issues and PRs welcome on any active repo. No roadmap, no Discord.
+Issues and PRs welcome on any active repo. No roadmap, no Discord. If one saves you time, you can [sponsor me](https://github.com/sponsors/Real-Fruit-Snacks).
 
 <sub>The board is drawn by [`art/make-board.py`](art/make-board.py) in Schibsted Grotesk and Fragment Mono.</sub>
