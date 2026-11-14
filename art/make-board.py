@@ -3,7 +3,7 @@
 The board is the first screen of real-fruit-snacks.github.io as one image: the headline, the index of
 tools, and one tool's job at a time, what goes in and what comes out. An Ember seam sweeps each job
 and the output appears behind it; then the marker moves down the index to the next tool. It loops
-through all eleven, 3.2 s each. The SVG's base styles are a finished still of the first tool, which
+through all twelve, 3.2 s each. The SVG's base styles are a finished still of the first tool, which
 is what a viewer that skips the animation, or asks for reduced motion, shows.
 
 Text is converted to paths from the site's fonts (art/fonts), because an SVG shown through <img>
@@ -26,16 +26,17 @@ OUT = os.path.join(HERE, "..", "assets")
 # Real-Fruit-Snacks/Real-Fruit-Snacks.github.io. `backticks` set a part in mono.
 TOOLS = [
     ("screen-mark", "Rust · Windows, Linux", "`Ctrl+PrintScreen`", "`screen-mark_2026-11-05_091412.png`"),
-    ("port-sync", "PowerShell · Windows", "`Port pair 51037->51037`", "`listening port updated: 48213 -> 51037`"),
+    ("port-sync", "Rust · Windows", "`Port pair 51037->51037`", "`listening port updated: 48213 -> 51037`"),
     ("carify", "sh, PowerShell · Windows, macOS, Linux", "HEVC 10-bit · 1080p · AC3 5.1", "H.264 8-bit · 720p · AAC stereo"),
     ("certapi", "C# · Windows", "a client certificate in `CurrentUser\\My`", "200 OK; the key never left the store"),
     ("identity-gen", "HTML · browser", "a signup form that wants too much", "a stand-in: name, handle, passphrase"),
-    ("amazon-order-sync", "JavaScript · Windows, Linux", "Amazon's order history", "one `Order-<id>.md` per order"),
+    ("amazon-order-sync", "Rust · Windows, Linux", "Amazon's order history", "one `Order-<id>.md` per order"),
     ("powershell-toolbox", "PowerShell · Windows", "every repo your `gh` login sees", "one at a time: keep, archive or delete"),
     ("forge-framework", "Python", "`use`, `set`, `run`", "hosts, creds and loot in one workspace"),
     ("open-file", "TypeScript · browser", "a blunder in one of your games", "a puzzle made from it"),
     ("proxflow", "TypeScript · Windows", "a Proxmox with no internet", "a domain lab, built from one canvas"),
-    ("agent-toolkit", "PowerShell · Windows, Linux", "a bare Windows machine", "the same pinned coding setup"),
+    ("agent-toolkit", "PowerShell · Windows, Linux", "a Windows desktop where you aren't admin", "T3 Code and Claude Code, no UAC prompt"),
+    ("dev-toolkit", "C# · Windows", "a Windows PC with no internet or admin", "Rust, Python, Node and .NET, all offline"),
 ]
 
 # RFS Nightshift and Dayshift
