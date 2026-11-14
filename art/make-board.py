@@ -3,7 +3,7 @@
 The board is the first screen of real-fruit-snacks.github.io as one image: the headline, the index of
 tools, and one tool's job at a time, what goes in and what comes out. An Ember seam sweeps each job
 and the output appears behind it; then the marker moves down the index to the next tool. It loops
-through all twelve, 3.2 s each. The SVG's base styles are a finished still of the first tool, which
+through all eleven, 3.2 s each. The SVG's base styles are a finished still of the first tool, which
 is what a viewer that skips the animation, or asks for reduced motion, shows.
 
 Text is converted to paths from the site's fonts (art/fonts), because an SVG shown through <img>
@@ -36,7 +36,6 @@ TOOLS = [
     ("open-file", "TypeScript · browser", "a blunder in one of your games", "a puzzle made from it"),
     ("proxflow", "TypeScript · Windows", "a Proxmox with no internet", "a domain lab, built from one canvas"),
     ("agent-toolkit", "PowerShell · Windows, Linux", "a bare Windows machine", "the same pinned coding setup"),
-    ("killer-skills", "JavaScript · Claude Code", "`/killer-design`", "a site, screenshotted and fixed"),
 ]
 
 # RFS Nightshift and Dayshift
