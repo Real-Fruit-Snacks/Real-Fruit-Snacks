@@ -36,6 +36,7 @@ TOOLS = [
     ("pwn-broker", "Python · Kali Linux", "`pwn-broker new`", "`2026-11-16_htb_forest.finished.tar.gz`"),
     ("pwn-shop", "Python · Kali Linux", "an upstream release, pinned by SHA-256", "`kerbrute-1.0.3-1.zip`"),
     ("pwn-playbooks", "Markdown · Kali Linux", "`:Pb smb` in the note window", "`Playbook: SMB enumeration`, to fill in"),
+    ("pwn-report", "Python · Kali Linux", "`2026-11-16_htb_forest.finished.tar.gz`", "`report.md`, every file with its SHA-256"),
     ("open-file", "TypeScript · browser", "a blunder in one of your games", "a puzzle made from it"),
 ]
 
