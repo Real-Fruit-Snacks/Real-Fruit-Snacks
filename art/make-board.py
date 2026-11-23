@@ -33,7 +33,6 @@ TOOLS = [
     ("identity-gen", "HTML · browser", "a signup form that wants too much", "a stand-in: name, handle, passphrase"),
     ("amazon-order-sync", "Rust · Windows, Linux", "Amazon's order history", "one `Order-<id>.md` per order"),
     ("powershell-toolbox", "PowerShell · Windows", "every repo your `gh` login sees", "one at a time: keep, archive or delete"),
-    ("forge-framework", "Python", "`use`, `set`, `run`", "hosts, creds and loot in one workspace"),
     ("pwn-broker", "Python · Kali Linux", "`pwn-broker new`", "`2026-11-16_htb_forest.finished.tar.gz`"),
     ("pwn-shop", "Python · Kali Linux", "an upstream release, pinned by SHA-256", "`kerbrute-1.0.3-1.zip`"),
     ("pwn-playbooks", "Markdown · Kali Linux", "`:Pb smb` in the note window", "`Playbook: SMB enumeration`, to fill in"),
