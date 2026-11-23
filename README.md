@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/board-dark.svg">
-  <img alt="Small tools, one job each. A board lists eleven tools, and for each in turn an orange seam sweeps its job, turning what goes in into what comes out: Ctrl+PrintScreen into screen-mark_2026-11-05_091412.png, Proton's Port pair 51037->51037 into listening port updated: 48213 -> 51037, HEVC 10-bit 1080p into H.264 8-bit 720p, and on through the list" src="assets/board-light.svg" width="100%">
+  <img alt="Small tools, one job each. A board lists twelve tools, and for each in turn an orange seam sweeps its job, turning what goes in into what comes out: Ctrl+PrintScreen into screen-mark_2026-11-05_091412.png, Proton's Port pair 51037->51037 into listening port updated: 48213 -> 51037, HEVC 10-bit 1080p into H.264 8-bit 720p, and on through the list" src="assets/board-light.svg" width="100%">
 </picture>
 
 I write small tools for jobs I kept doing by hand. Each one does one job, and the board above runs through them: what you hand it, and what you get back. The same list, with a page for each tool, is at **[real-fruit-snacks.github.io](https://real-fruit-snacks.github.io/)**.
@@ -17,6 +17,7 @@ I write small tools for jobs I kept doing by hand. Each one does one job, and th
 | [**pwn-broker**](https://github.com/Real-Fruit-Snacks/pwn-broker)<br><sub>Python · Kali Linux</sub> | Keeps a box's targets, notes, creds and tools in order |
 | [**pwn-shop**](https://github.com/Real-Fruit-Snacks/pwn-shop)<br><sub>Python · Kali Linux</sub> | Tool packages for pwn-broker, built from upstream releases |
 | [**pwn-playbooks**](https://github.com/Real-Fruit-Snacks/pwn-playbooks)<br><sub>Markdown · Kali Linux</sub> | Playbooks for pwn-broker: read into the note, fill in, run |
+| [**pwn-report**](https://github.com/Real-Fruit-Snacks/pwn-report)<br><sub>Python · Kali Linux</sub> | Private, evidence-linked reports from pwn-broker archives |
 | [**open-file**](https://github.com/Real-Fruit-Snacks/open-file)<br><sub>TypeScript · browser</sub> | Learn and play chess in your browser, offline |
 
 Around them: [rfs-brand](https://github.com/Real-Fruit-Snacks/rfs-brand), the brand, profile art and repo templates, and [rfs.tools](https://rfs.tools/), the front door.
