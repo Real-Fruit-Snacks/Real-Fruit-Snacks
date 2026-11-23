@@ -38,7 +38,6 @@ TOOLS = [
     ("pwn-shop", "Python · Kali Linux", "an upstream release, pinned by SHA-256", "`kerbrute-1.0.3-1.zip`"),
     ("pwn-playbooks", "Markdown · Kali Linux", "`:Pb smb` in the note window", "`Playbook: SMB enumeration`, to fill in"),
     ("open-file", "TypeScript · browser", "a blunder in one of your games", "a puzzle made from it"),
-    ("proxflow", "TypeScript · Windows", "a Proxmox with no internet", "a domain lab, built from one canvas"),
     ("agent-toolkit", "PowerShell · Windows, Linux", "a Windows desktop where you aren't admin", "T3 Code and Claude Code, no UAC prompt"),
     ("dev-toolkit", "C# · Windows", "a Windows PC with no internet or admin", "Rust, Python, Node and .NET, all offline"),
 ]
