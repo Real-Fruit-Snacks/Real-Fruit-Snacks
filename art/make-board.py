@@ -3,8 +3,9 @@
 The board is the first screen of real-fruit-snacks.github.io as one image: the headline, the index of
 tools, and one tool's job at a time, what goes in and what comes out. An Ember seam sweeps each job
 and the output appears behind it; then the marker moves down the index to the next tool. It loops
-through all twelve, 3.2 s each. The SVG's base styles are a finished still of the first tool, which
-is what a viewer that skips the animation, or asks for reduced motion, shows.
+through all of them, 3.2 s each, and the board grows to fit the index. The SVG's base styles are a
+finished still of the first tool, which is what a viewer that skips the animation, or asks for
+reduced motion, shows.
 
 Text is converted to paths from the site's fonts (art/fonts), because an SVG shown through <img>
 can't load fonts. Run from the repo root:
@@ -33,8 +34,10 @@ TOOLS = [
     ("amazon-order-sync", "Rust · Windows, Linux", "Amazon's order history", "one `Order-<id>.md` per order"),
     ("powershell-toolbox", "PowerShell · Windows", "every repo your `gh` login sees", "one at a time: keep, archive or delete"),
     ("forge-framework", "Python", "`use`, `set`, `run`", "hosts, creds and loot in one workspace"),
+    ("pwn-broker", "Python · Kali Linux", "`pwn-broker new`", "`2026-11-16_htb_forest.finished.tar.gz`"),
+    ("pwn-shop", "Python · Kali Linux", "an upstream release, pinned by SHA-256", "`kerbrute-1.0.3-1.zip`"),
+    ("pwn-playbooks", "Markdown · Kali Linux", "`:Pb smb` in the note window", "`Playbook: SMB enumeration`, to fill in"),
     ("open-file", "TypeScript · browser", "a blunder in one of your games", "a puzzle made from it"),
-    ("proxflow", "TypeScript · Windows", "a Proxmox with no internet", "a domain lab, built from one canvas"),
     ("agent-toolkit", "PowerShell · Windows, Linux", "a Windows desktop where you aren't admin", "T3 Code and Claude Code, no UAC prompt"),
     ("dev-toolkit", "C# · Windows", "a Windows PC with no internet or admin", "Rust, Python, Node and .NET, all offline"),
 ]
@@ -47,8 +50,8 @@ THEMES = {
                   ember="#C03B0A", amber="#925F00", mint="#15794D", glow=False),
 }
 
-W, H = 1000, 540
-SLOT = 3.2                      # seconds per tool
+W = 1000
+SLOT = 3.2                     # seconds per tool
 CYCLE = SLOT * len(TOOLS)
 SWEEP_AT, SWEEP = 0.35, 0.9     # the seam starts 0.35 s into a slot and takes 0.9 s
 EASE = "cubic-bezier(.65,0,.35,1)"
@@ -57,6 +60,7 @@ EASE = "cubic-bezier(.65,0,.35,1)"
 X0, X1 = 40, 960                # outer edges
 IDX_NO, IDX_NAME, IDX_END = 40, 82, 330
 ROW0, ROW_H = 150, 31           # index rows
+H = ROW0 + len(TOOLS) * ROW_H + 18   # the index, then 18 px below it: 540 for twelve tools
 DX, DX_TEXT = 384, 452          # the display: labels, then the job text
 JOB = 36                        # job type size
 
