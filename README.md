@@ -20,7 +20,7 @@ Local-first open-source software across Rust, Python, C#, PowerShell, and TypeSc
 | [**pwn-report**](https://github.com/Real-Fruit-Snacks/pwn-report)<br><sub>Python · Kali Linux</sub> | Private, evidence-linked reports from pwn-broker archives |
 | [**open-file**](https://github.com/Real-Fruit-Snacks/open-file)<br><sub>TypeScript · browser</sub> | Learn and play chess in your browser, offline |
 
-Supporting repositories: [rfs-brand](https://github.com/Real-Fruit-Snacks/rfs-brand) (Cyclorama Dawn brand system, marks, and repo cover tools) and [rfs.tools](https://rfs.tools/) (the single-page front door).
+Supporting repositories: [rfs-brand](https://github.com/Real-Fruit-Snacks/rfs-brand) (Cyclorama Dawn brand system, marks, and repo cover tools), [rfs-themes](https://github.com/Real-Fruit-Snacks/rfs-themes) (Cyclorama Dawn themes and ports for everyday apps), and [rfs.tools](https://rfs.tools/) (the single-page front door).
 
 Retired archive (read-only, no fixes or releases): `forge-framework` · `agent-toolkit` · `dev-toolkit` · `Kraken` · `Maelstrom` · `Rapids` · `Lure` · `Undertow`.
 
