@@ -1,11 +1,11 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/board-dark.svg">
-  <img alt="Small tools, one job each. A board lists twelve tools, and for each in turn an orange seam sweeps its job, turning what goes in into what comes out: Ctrl+PrintScreen into screen-mark_2026-11-05_091412.png, Proton's Port pair 51037->51037 into listening port updated: 48213 -> 51037, HEVC 10-bit 1080p into H.264 8-bit 720p, and on through the list" src="assets/board-light.svg" width="100%">
+  <img alt="Real-Fruit-Snacks. Built local-first. Twelve active open-source tools across Rust, Python, C#, PowerShell, and TypeScript—stepping through each tool's input and output from screen-mark to open-file" src="assets/board-light.svg" width="100%">
 </picture>
 
-I write small tools for jobs I kept doing by hand. Each one does one job, and the board above runs through them: what you hand it, and what you get back. The same list, with a page for each tool, is at **[real-fruit-snacks.github.io](https://real-fruit-snacks.github.io/)**.
+Local-first open-source software across Rust, Python, C#, PowerShell, and TypeScript: desktop utilities, Windows networking clients, Kali Linux workflows, and offline browser apps with zero accounts, zero tracking, and plain inputs and outputs. The interactive catalog lives at **[real-fruit-snacks.github.io](https://real-fruit-snacks.github.io/)** (front door: **[rfs.tools](https://rfs.tools/)**).
 
-| Tool | Its job |
+| Tool | What it does |
 |---|---|
 | [**screen-mark**](https://github.com/Real-Fruit-Snacks/screen-mark)<br><sub>Rust · Windows, Linux</sub> | Screenshot capture and annotation in pure Rust |
 | [**port-sync**](https://github.com/Real-Fruit-Snacks/port-sync)<br><sub>Rust · Windows</sub> | Keeps qBittorrent's port synced to Proton VPN |
@@ -13,24 +13,24 @@ I write small tools for jobs I kept doing by hand. Each one does one job, and th
 | [**certapi**](https://github.com/Real-Fruit-Snacks/certapi)<br><sub>C# · Windows</sub> | mTLS API client for the Windows certificate store |
 | [**identity-gen**](https://github.com/Real-Fruit-Snacks/identity-gen)<br><sub>HTML · browser</sub> | Offline generator for throwaway signup identities |
 | [**amazon-order-sync**](https://github.com/Real-Fruit-Snacks/amazon-order-sync)<br><sub>Rust · Windows, Linux</sub> | Syncs your Amazon orders into local Markdown notes |
-| [**powershell-toolbox**](https://github.com/Real-Fruit-Snacks/powershell-toolbox)<br><sub>PowerShell · Windows</sub> | A grab-bag of my PowerShell scripts, each one standalone |
-| [**pwn-broker**](https://github.com/Real-Fruit-Snacks/pwn-broker)<br><sub>Python · Kali Linux</sub> | Keeps a box's targets, notes, creds and tools in order |
+| [**powershell-toolbox**](https://github.com/Real-Fruit-Snacks/powershell-toolbox)<br><sub>PowerShell · Windows</sub> | A grab-bag of standalone PowerShell scripts |
+| [**pwn-broker**](https://github.com/Real-Fruit-Snacks/pwn-broker)<br><sub>Python · Kali Linux</sub> | Keeps a box's targets, notes, creds, and tools in order |
 | [**pwn-shop**](https://github.com/Real-Fruit-Snacks/pwn-shop)<br><sub>Python · Kali Linux</sub> | Tool packages for pwn-broker, built from upstream releases |
 | [**pwn-playbooks**](https://github.com/Real-Fruit-Snacks/pwn-playbooks)<br><sub>Markdown · Kali Linux</sub> | Playbooks for pwn-broker: read into the note, fill in, run |
 | [**pwn-report**](https://github.com/Real-Fruit-Snacks/pwn-report)<br><sub>Python · Kali Linux</sub> | Private, evidence-linked reports from pwn-broker archives |
 | [**open-file**](https://github.com/Real-Fruit-Snacks/open-file)<br><sub>TypeScript · browser</sub> | Learn and play chess in your browser, offline |
 
-Around them: [rfs-brand](https://github.com/Real-Fruit-Snacks/rfs-brand), the brand, profile art and repo templates, and [rfs.tools](https://rfs.tools/), the front door.
+Supporting repositories: [rfs-brand](https://github.com/Real-Fruit-Snacks/rfs-brand) (Cyclorama Dawn brand system, marks, and repo cover tools) and [rfs.tools](https://rfs.tools/) (the single-page front door).
 
-Retired: `agent-toolkit` · `dev-toolkit` · `forge-framework`, plus `Kraken` · `Maelstrom` · `Rapids` · `Lure` · `Undertow`, the water series. All are archived and read-only, with no fixes or releases.
+Retired archive (read-only, no fixes or releases): `forge-framework` · `agent-toolkit` · `dev-toolkit` · `Kraken` · `Maelstrom` · `Rapids` · `Lure` · `Undertow`.
 
-### How they're built
+### Core principles
 
-- One job per tool. If it needs a second README section to explain, it's two tools.
-- Install is one line, shown first.
-- "Tested on" is a list of real versions, not a promise.
-- Known issues sit above the fold.
+- **Local-first by default:** Software runs on your machine against your own files, certs, and processes—not behind a cloud service.
+- **No accounts or tracking:** Zero signups, zero telemetry beacons, and zero third-party analytics.
+- **Source-first on GitHub:** Every active project is public, inspectable, and documented plainly beside its real inputs and outputs.
+- **Direct downloads & reproducible setups:** Releases, source builds, and scripted setups stay straightforward without vendor lock-in.
 
-Issues and PRs welcome on any active repo. No roadmap, no Discord. If one saves you time, you can [sponsor me](https://github.com/sponsors/Real-Fruit-Snacks).
+Issues and pull requests are welcome on any active repository. If one of these tools saves you time, you can [sponsor me](https://github.com/sponsors/Real-Fruit-Snacks).
 
-<sub>The board is drawn by [`art/make-board.py`](art/make-board.py) in Schibsted Grotesk and Fragment Mono.</sub>
+<sub>The board above is generated by [`art/make-board.py`](art/make-board.py) in Big Shoulders Stencil, Albert Sans, and Azeret Mono.</sub>
