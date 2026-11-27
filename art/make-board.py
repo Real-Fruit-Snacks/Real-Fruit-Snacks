@@ -257,10 +257,10 @@ THEMES = {
         beacon="#AD3D0A",
         beam="#D85B1C",
         track_bg="rgba(13,16,22,0.13)",
-        wash_active_op="0.14",
+        wash_active_op="0.22",
         cap_fill="#FFFFFF",
         cap_stroke="#2F3744",
-        wash_op="0.14",
+        wash_op="0.32",
         rule_a="#18496B",
         rule_b="#1F547A",
         rule_c="#AD3D0A",
@@ -480,7 +480,10 @@ def rfs_tile(c, theme, tx, ty, ts, disp):
     else:
         bg = (
             f'<rect x="{tx + 0.75}" y="{ty + 0.75}" width="{ts - 1.5}" height="{ts - 1.5}" '
-            f'rx="{max(0, rx - 0.75):.2f}" fill="#FFFFFF" stroke="{c["line"]}" stroke-width="1.5"/>'
+            f'rx="{max(0, rx - 0.75):.2f}" fill="#FFFFFF"/>'
+            f'<rect x="{tx}" y="{ty}" width="{ts}" height="{ts}" rx="{rx}" fill="url(#cyc-h)" opacity="0.36" mask="url(#tile-m)"/>'
+            f'<rect x="{tx + 0.75}" y="{ty + 0.75}" width="{ts - 1.5}" height="{ts - 1.5}" '
+            f'rx="{max(0, rx - 0.75):.2f}" fill="none" stroke="{c["line"]}" stroke-width="1.5"/>'
         )
         fg = c["ink"]
         bar_fill = "url(#rule)"
