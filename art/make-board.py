@@ -1,14 +1,14 @@
 """Draw the Real-Fruit-Snacks profile README board: assets/board-dark.svg & assets/board-light.svg.
 
 World: Cyclorama Dawn (Steel & Beacon Orange).
-Architecture: 17-Channel Stage Lighting DMX Patch Console (1000x548).
+Architecture: 17-Channel Stage Lighting DMX Cue Matrix Console (1000x610).
   - Row 1: Unified Cyclorama RFS tile, REAL-FRUIT-SNACKS masthead, and LX cue tag.
   - Row 2: Live Stage Patch Deck showing active channel identity, plain description,
            dwell progress bar, and recessed IN -> OUT Signal Patch Bay with Beacon scan reveal.
-  - Row 3: 17-Channel Cyclorama Dawn DMX Fader Bank spanning all 17 active tools across
-           the Steel -> Beacon Horizon -> Flame -> Alabaster spectrum. As each channel activates,
-           its hardware fader cap glides smoothly up to 86% live output while its Beacon frame
-           and cue LED lock in.
+  - Row 3: 3x6 Cyclorama Dawn DMX Cue Matrix spanning all 17 active tools with unwrapped
+           single-line repo names, smooth Obsidian -> Steel -> Beacon Orange -> Golden Dawn
+           gel bars, and synchronized horizontal hardware faders that glide to 86% live output
+           as each channel activates.
 
 Static-First Invariant: Base DOM (outside prefers-reduced-motion: no-preference) renders
 Channel #01 (screen-mark) at full live peak with unobstructed IN -> OUT traces and Channels
@@ -22,6 +22,7 @@ Run from the repo root:
     python -m pip install -r art/requirements.txt
     python art/make-board.py
 """
+import math
 import os
 import sys
 
@@ -191,26 +192,27 @@ TOOLS = [
     ),
 ]
 
-# 17-step Cyclorama Dawn gel spectrum marching from Blackout Steel -> LX 263 Beacon Horizon -> Flame -> Alabaster Day
-# (top_c, mid_c, bot_c, polarity)
+# 17-step smooth Cyclorama Dawn gel spectrum (zero blown-out white cliff):
+# Obsidian Steel -> Glacial Steel -> Horizon Break -> Beacon Orange -> Golden Dawn Crest
+# Tuple: (wash_start, wash_mid, dark_bar, light_bar)
 CHANNEL_GELS = [
-    ("#07090E", "#0E1520", "#16283B", "dark"),
-    ("#080B12", "#112132", "#18364E", "dark"),
-    ("#080E16", "#132C42", "#1B4463", "dark"),
-    ("#09131C", "#163B57", "#1F547A", "dark"),
-    ("#0B1620", "#194466", "#2D5B7B", "dark"),
-    ("#0D1B28", "#1C4B6F", "#655858", "dark"),
-    ("#102436", "#1E4D72", "#AE5126", "dark"),
-    ("#122F46", "#1F547A", "#F06E2B", "dark"),
-    ("#15202A", "#463B40", "#EC6A27", "dark"),
-    ("#18100C", "#68280E", "#E86624", "dark"),
-    ("#1A0A06", "#8B2F0B", "#F06E2B", "dark"),
-    ("#210E08", "#9B3810", "#F27B3B", "dark"),
-    ("#26120B", "#A63F14", "#F48A4C", "dark"),
-    ("#2C1913", "#AE572F", "#E6B393", "dark"),
-    ("#C9D8E4", "#E6DFDA", "#F9F1EC", "light"),
-    ("#DCE5ED", "#EFE4DB", "#FDF8F5", "light"),
-    ("#EAEEF2", "#F5F7F9", "#FFFFFF", "light"),
+    ("#09111B", "#142B42", "#316896", "#164669"),  # 01 screen-mark
+    ("#0A1320", "#173452", "#3A77AA", "#194F78"),  # 02 port-sync
+    ("#0B1625", "#1A3E62", "#4586BD", "#1D5886"),  # 03 carify
+    ("#0C192A", "#1E4972", "#5396CE", "#216194"),  # 04 certapi
+    ("#0D1C2E", "#225380", "#62A5DB", "#266A9E"),  # 05 identity-gen
+    ("#0F1F32", "#265D8D", "#72B4E6", "#2C72A6"),  # 06 amazon-order-sync
+    ("#112134", "#2B6290", "#82BFE8", "#3278A8"),  # 07 powershell-toolbox
+    ("#132132", "#345C80", "#8EAAC0", "#496C87"),  # 08 pwn-broker (pre-dawn mist)
+    ("#171E2A", "#4D4E5E", "#C47448", "#8B5232"),  # 09 pwn-shop (horizon break)
+    ("#1B1922", "#6A3F3A", "#DF6B30", "#B24B18"),  # 10 pwn-playbooks
+    ("#1F151A", "#823622", "#EB6C2B", "#C44D14"),  # 11 pwn-report
+    ("#221213", "#983718", "#F06E2B", "#D15316"),  # 12 open-file
+    ("#25120F", "#AB3E17", "#F47E38", "#D65A1A"),  # 13 one-billion-pixels
+    ("#28140E", "#BC4A1B", "#F89048", "#CC601C"),  # 14 hash-bait
+    ("#2B170F", "#C95922", "#FCA45C", "#BE641E"),  # 15 cred-spray
+    ("#2E1A11", "#D4692C", "#FFB872", "#B06620"),  # 16 ad-sweep
+    ("#311E13", "#DE7A38", "#FFCC8C", "#A16622"),  # 17 shell-tunnel
 ]
 
 # Cyclorama Dawn — Steel & Beacon Orange (LX 263 Dark / LX 512 Alabaster Day)
@@ -224,11 +226,16 @@ THEMES = {
         line_strong="#464852",
         frame="rgba(255,255,255,0.14)",
         ink="#F4F5F8",
+        strip_ink="#D5D8E2",
         mute="#B3B5C0",
         steel="#74B8E8",
         steel_fill="#18496B",
         beacon="#FF9254",
         beam="#F06E2B",
+        track_bg="rgba(255,255,255,0.10)",
+        wash_active_op="0.28",
+        cap_fill="#FFFFFF",
+        cap_stroke="#050507",
         wash_op="0.44",
         rule_a="#74B8E8",
         rule_b="#3B85B8",
@@ -243,11 +250,16 @@ THEMES = {
         line_strong="#8B94A0",
         frame="rgba(13,16,22,0.15)",
         ink="#0D1016",
+        strip_ink="#1F2530",
         mute="#474D59",
         steel="#164669",
         steel_fill="#18496B",
         beacon="#AD3D0A",
         beam="#D85B1C",
+        track_bg="rgba(13,16,22,0.13)",
+        wash_active_op="0.14",
+        cap_fill="#FFFFFF",
+        cap_stroke="#2F3744",
         wash_op="0.14",
         rule_a="#18496B",
         rule_b="#1F547A",
@@ -255,7 +267,13 @@ THEMES = {
     ),
 }
 
-W, H = 1000, 548
+W = 1000
+MATRIX_COLS = 3
+MATRIX_ROWS = math.ceil((len(TOOLS) + 1) / MATRIX_COLS)
+BANK_X, BANK_Y, BANK_W = 32, 304, 936
+CELL_H, CELL_GX, CELL_GY = 32.5, 10.0, 7.0
+BANK_H = round(43 + MATRIX_ROWS * CELL_H + (MATRIX_ROWS - 1) * CELL_GY + 11)
+H = BANK_Y + BANK_H + 22  # 610px for 17 tools (3x6)
 SLOT = 3.2
 CYCLE = SLOT * len(TOOLS)
 SWEEP_AT, SWEEP = 0.35, 0.80
@@ -538,78 +556,90 @@ def build(theme):
     css.append("@keyframes dwell{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}")
     rules.append(f".dwell-bar{{transform-origin:{PROG_X}px {PROG_Y}px;animation:dwell {SLOT}s linear infinite}}")
 
-    # 4. Row 3: 17-Channel Cyclorama Dawn DMX Fader Bank (x=32, y=304, w=936, h=222)
-    BANK_X, BANK_Y, BANK_W, BANK_H = 32, 304, 936, 222
+    # 4. Row 3: 3x6 Cyclorama Dawn DMX Cue Matrix (horizontal hardware fader bay)
     o.append(f'<rect x="{BANK_X}" y="{BANK_Y}" width="{BANK_W}" height="{BANK_H}" rx="12" fill="{c["deck"]}" stroke="{c["line"]}" stroke-width="1.2"/>')
-    o.append(text(f"CYCLORAMA DAWN  ·  {len(TOOLS)}-CHANNEL DMX FADER BANK", BANK_X + 20, BANK_Y + 23, 10, mono_b, c["steel"], ls=0.10))
-    o.append(text("LX 001 — 512", BANK_X + BANK_W - 20, BANK_Y + 23, 10, mono_r, c["mute"], ls=0.08, anchor="end"))
+    o.append(text(f"CYCLORAMA DAWN  ·  {len(TOOLS)}-CHANNEL DMX CUE MATRIX", BANK_X + 20, BANK_Y + 23, 10, mono_b, c["steel"], ls=0.10))
+    o.append(text("LX 001 — 512  ·  HORIZONTAL FADER BAY", BANK_X + BANK_W - 20, BANK_Y + 23, 10, mono_r, c["mute"], ls=0.06, anchor="end"))
     o.append(f'<rect x="{BANK_X + 20}" y="{BANK_Y + 33}" width="{BANK_W - 40}" height="1" fill="{c["line"]}"/>')
 
-    # Fader channel grid geometry
+    # Matrix cell geometry
     n = len(TOOLS)
-    col_gap = 5.0
-    cols_x = BANK_X + 18.0
-    cols_w = BANK_W - 36.0
-    col_w = (cols_w - col_gap * (n - 1)) / n  # ~48.24px per channel for 17 tools
-    col_top = BANK_Y + 43.0
-    col_h = 122.0
-    col_bot = col_top + col_h
-    slot_top = col_top + 18.0
-    slot_bot = col_bot - 16.0
-    slot_span = slot_bot - slot_top
-    led_rest_w = 22.0
-    led_lit_w = 26.0
-    tick_hw = 4.0
-    cap_w, cap_h = round(col_w * 0.58, 1), 10.5
+    grid_x = BANK_X + 18.0
+    grid_y = BANK_Y + 43.0
+    grid_w = BANK_W - 36.0
+    cell_w = (grid_w - CELL_GX * (MATRIX_COLS - 1)) / MATRIX_COLS  # 293.33px per strip
+    tr_w = 82.0
+    kw, kh = 9.0, 15.0
 
-    # Draw static fader columns + slots + standby ticks + resting labels first
-    col_meta = []
-    for i, (repo, lang, plat, desc, job_in, job_out, short_lines) in enumerate(TOOLS):
-        cx = cols_x + i * (col_w + col_gap)
-        mid_x = cx + col_w / 2.0
-        polarity = CHANNEL_GELS[i][3]
-        slot_stroke = "rgba(255,255,255,0.22)" if polarity == "dark" else "rgba(13,16,22,0.18)"
-        led_dim = "rgba(255,255,255,0.20)" if polarity == "dark" else "rgba(13,16,22,0.16)"
+    # Draw static resting horizontal cue strips first
+    cell_meta = []
+    track_clips = []
+    for i, (repo, lang, plat, desc, job_in, job_out, _) in enumerate(TOOLS):
+        row = i // MATRIX_COLS
+        col = i % MATRIX_COLS
+        cx = grid_x + col * (cell_w + CELL_GX)
+        cy = grid_y + row * (CELL_H + CELL_GY)
+        tr_x = cx + cell_w - 94.0
+        tr_y = cy + CELL_H / 2.0
+        bar_col = CHANNEL_GELS[i][2] if theme == "dark" else CHANNEL_GELS[i][3]
 
-        # Gel-lit vertical channel background
+        # Recessed channel strip + left Cyclorama Dawn gel bar
         o.append(
-            f'<rect x="{cx:.1f}" y="{col_top:.1f}" width="{col_w:.1f}" height="{col_h:.1f}" '
-            f'rx="6" fill="url(#ch-{i})" stroke="{c["line"]}" stroke-width="1"/>'
+            f'<rect x="{cx:.1f}" y="{cy:.1f}" width="{cell_w:.1f}" height="{CELL_H:.1f}" '
+            f'rx="5" fill="{c["code_bg"]}" stroke="{c["line"]}" stroke-width="1"/>'
         )
-        # Resting dim top LED bar
-        o.append(f'<rect x="{mid_x - led_rest_w / 2:.1f}" y="{col_top + 6:.1f}" width="{led_rest_w:.1f}" height="3" rx="1.5" fill="{led_dim}"/>')
-        # Vertical DMX fader slot + 3 micro calibration ticks
-        o.append(f'<line x1="{mid_x:.1f}" y1="{slot_top:.1f}" x2="{mid_x:.1f}" y2="{slot_bot:.1f}" stroke="{slot_stroke}" stroke-width="1.5" stroke-linecap="round"/>')
-        for frac in (0.25, 0.5, 0.75):
-            ty = slot_bot - frac * slot_span
-            o.append(f'<line x1="{mid_x - tick_hw:.1f}" y1="{ty:.1f}" x2="{mid_x + tick_hw:.1f}" y2="{ty:.1f}" stroke="{slot_stroke}" stroke-width="1"/>')
+        o.append(f'<rect x="{cx + 1:.1f}" y="{cy + 5:.1f}" width="3.5" height="{CELL_H - 10:.1f}" rx="1.75" fill="{bar_col}"/>')
 
-        # Resting muted channel number & repo label under column
-        o.append(text(f"{i + 1:02d}", mid_x, col_bot + 16, 8.5, mono_b, c["mute"], ls=0.05, anchor="middle"))
-        for li, sline in enumerate(short_lines):
-            o.append(text(sline, mid_x, col_bot + 28 + li * 10.0, 8.0, sans_m, c["mute"], anchor="middle"))
+        # Resting channel number + full single-line repo slug (auto-fitted cleanly before slider track)
+        o.append(text(f"{i + 1:02d}", cx + 12, cy + 20.5, 9.5, mono_b, c["mute"], ls=0.04))
+        slug_avail = (tr_x - 10.0) - (cx + 34.0)
+        lbl_sz = 11.2
+        while sans_b.width(repo, lbl_sz) > slug_avail and lbl_sz > 8.5:
+            lbl_sz -= 0.2
+        o.append(text(repo, cx + 34, cy + 20.5, lbl_sz, sans_m, c["strip_ink"]))
 
-        rest_level = 0.16 + 0.34 * (i / (n - 1))
+        # Resting horizontal DMX fader track groove
+        o.append(f'<rect x="{tr_x:.1f}" y="{tr_y - 2:.1f}" width="{tr_w:.1f}" height="4" rx="2" fill="{c["track_bg"]}"/>')
+        track_clips.append(
+            f'<clipPath id="tr-{i}"><rect x="{tr_x:.1f}" y="{tr_y - 2:.1f}" width="{tr_w:.1f}" height="4" rx="2"/></clipPath>'
+        )
+
+        rest_level = 0.18 + 0.34 * (i / (n - 1))
         peak_level = 0.86
-        rest_y = slot_bot - rest_level * slot_span
-        peak_y = slot_bot - peak_level * slot_span
-        col_meta.append((cx, mid_x, polarity, rest_y, peak_y))
+        rest_x = tr_x + rest_level * tr_w
+        peak_x = tr_x + peak_level * tr_w
+        cell_meta.append((cx, cy, tr_x, tr_y, bar_col, lbl_sz, rest_x, peak_x))
 
-    # 5. Per-Tool Active Stage Viewport + Active Fader Highlight + Animated Hardware Fader Cap
+    # Trailing summary cell (fills slot #18 in the 3x6 grid)
+    if n < MATRIX_COLS * MATRIX_ROWS:
+        mr = n // MATRIX_COLS
+        mc = n % MATRIX_COLS
+        mx = grid_x + mc * (cell_w + CELL_GX)
+        my = grid_y + mr * (CELL_H + CELL_GY)
+        lx_code = "LX 263" if theme == "dark" else "LX 512"
+        o.append(
+            f'<rect x="{mx:.1f}" y="{my:.1f}" width="{cell_w:.1f}" height="{CELL_H:.1f}" '
+            f'rx="5" fill="{c["code_bg"]}" stroke="{c["line_strong"]}" stroke-width="1"/>'
+        )
+        o.append(f'<rect x="{mx + 1:.1f}" y="{my + 1:.1f}" width="{cell_w - 2:.1f}" height="2.5" rx="1.25" fill="url(#rule)"/>')
+        o.append(text(lx_code, mx + 12, my + 20.5, 9.5, mono_b, c["steel"], ls=0.06))
+        o.append(text(f"{n} ACTIVE · ZERO ACCOUNTS", mx + cell_w - 12, my + 20.5, 9.0, mono_r, c["mute"], ls=0.05, anchor="end"))
+
+    # 5. Per-Tool Active Stage Viewport + Active Strip Highlight + Animated Horizontal Fader
     TEXT_X = BAY_X + 56
     MAX_IO_W = (BAY_X + BAY_W - 16) - TEXT_X
     IO_SZ = 18.0
     IO_LH = 22.0
 
-    for i, (repo, lang, plat, desc, job_in, job_out, short_lines) in enumerate(TOOLS):
+    for i, (repo, lang, plat, desc, job_in, job_out, _) in enumerate(TOOLS):
         t0 = i * SLOT
         t1 = (i + 1) * SLOT
         a = t0 + SWEEP_AT
         b = t0 + SWEEP_AT + SWEEP
         init_op = "" if i == 0 else ' opacity="0"'
-        cx, mid_x, polarity, rest_y, peak_y = col_meta[i]
+        cx, cy, tr_x, tr_y, bar_col, lbl_sz, rest_x, peak_x = cell_meta[i]
 
-        # ---- Active Stage Group (Viewport + Active Channel Frame/LED/Label) ----
+        # ---- Active Stage Group (Viewport + Active Cue Strip Frame/Wash/Label) ----
         g = [f'<g class="t{i}"{init_op}>']
 
         # Terminal Token Cue Tag ([ch 01/17]) + Stack/Platform
@@ -658,37 +688,44 @@ def build(theme):
             f'</g>'
         )
 
-        # Active Fader Channel Frame + Lit Top LED + Highlighted Channel Number & Repo Label
-        led_lit = "#FFFFFF" if polarity == "dark" else c["beam"]
+        # Active Cue Strip Illumination (surface + dawn wash + gel bar + Beacon border + crisp label)
+        g.append(f'<rect x="{cx:.1f}" y="{cy:.1f}" width="{cell_w:.1f}" height="{CELL_H:.1f}" rx="5" fill="{c["card"]}"/>')
         g.append(
-            f'<rect x="{cx:.1f}" y="{col_top:.1f}" width="{col_w:.1f}" height="{col_h:.1f}" '
-            f'rx="6" fill="none" stroke="{c["beam"]}" stroke-width="2.2"/>'
+            f'<rect x="{cx + 1:.1f}" y="{cy + 1:.1f}" width="{cell_w - 2:.1f}" height="{CELL_H - 2:.1f}" '
+            f'rx="4" fill="url(#hch-{i})" opacity="{c["wash_active_op"]}"/>'
         )
-        g.append(f'<rect x="{mid_x - led_lit_w / 2:.1f}" y="{col_top + 5.5:.1f}" width="{led_lit_w:.1f}" height="3.5" rx="1.75" fill="{led_lit}"/>')
-        g.append(text(f"{i + 1:02d}", mid_x, col_bot + 16, 8.5, mono_b, c["beacon"], ls=0.05, anchor="middle"))
-        for li, sline in enumerate(short_lines):
-            g.append(text(sline, mid_x, col_bot + 28 + li * 10.0, 8.0, sans_b, c["ink"], anchor="middle"))
+        g.append(f'<rect x="{cx + 1:.1f}" y="{cy + 5:.1f}" width="3.5" height="{CELL_H - 10:.1f}" rx="1.75" fill="{bar_col}"/>')
+        g.append(
+            f'<rect x="{cx:.1f}" y="{cy:.1f}" width="{cell_w:.1f}" height="{CELL_H:.1f}" '
+            f'rx="5" fill="none" stroke="{c["beam"]}" stroke-width="1.8"/>'
+        )
+        g.append(text(f"{i + 1:02d}", cx + 12, cy + 20.5, 9.5, mono_b, c["beacon"], ls=0.04))
+        g.append(text(repo, cx + 34, cy + 20.5, lbl_sz, sans_b, c["ink"]))
+        g.append(f'<rect x="{tr_x:.1f}" y="{tr_y - 2:.1f}" width="{tr_w:.1f}" height="4" rx="2" fill="{c["track_bg"]}"/>')
 
         g.append("</g>")
         o.append("".join(g))
 
-        # ---- Hardware Fader Cap (drawn ON TOP of active frame; glides up to 86% live peak!) ----
-        cap_fill = "#FFFFFF" if polarity == "dark" else "#0D1016"
-        cap_stroke = "#050507" if polarity == "dark" else "#FFFFFF"
-        base_y = peak_y if i == 0 else rest_y
+        # ---- Animated Horizontal Gel Fill Bar + Hardware Fader Cap (drawn ON TOP; locked 1:1 via .cap{i}!) ----
+        base_x = peak_x if i == 0 else rest_x
         notch_base_op = "1" if i == 0 else "0"
+        bar_x0 = base_x - tr_w
 
-        cap_svg = (
-            f'<g class="cap{i}">'
-            f'<rect x="{mid_x - cap_w / 2:.1f}" y="{base_y - cap_h / 2:.1f}" width="{cap_w:.1f}" height="{cap_h:.1f}" '
-            f'rx="2.5" fill="{cap_fill}" stroke="{cap_stroke}" stroke-width="1.2"/>'
-            f'<line x1="{mid_x - cap_w / 2 + 4:.1f}" y1="{base_y:.1f}" x2="{mid_x + cap_w / 2 - 4:.1f}" y2="{base_y:.1f}" '
-            f'stroke="{cap_stroke}" stroke-width="1.5" opacity="0.55"/>'
-            f'<line class="t{i}" x1="{mid_x - cap_w / 2 + 3.5:.1f}" y1="{base_y:.1f}" x2="{mid_x + cap_w / 2 - 3.5:.1f}" y2="{base_y:.1f}" '
-            f'stroke="{c["beam"]}" stroke-width="2.2" opacity="{notch_base_op}"/>'
+        o.append(
+            f'<g clip-path="url(#tr-{i})">'
+            f'<rect class="cap{i}" x="{bar_x0:.1f}" y="{tr_y - 2:.1f}" width="{tr_w:.1f}" height="4" fill="{bar_col}" opacity="0.92"/>'
             f'</g>'
         )
-        o.append(cap_svg)
+        o.append(
+            f'<g class="cap{i}">'
+            f'<rect x="{base_x - kw / 2:.1f}" y="{tr_y - kh / 2:.1f}" width="{kw:.1f}" height="{kh:.1f}" '
+            f'rx="2" fill="{c["cap_fill"]}" stroke="{c["cap_stroke"]}" stroke-width="1.15"/>'
+            f'<line x1="{base_x:.1f}" y1="{tr_y - 4.2:.1f}" x2="{base_x:.1f}" y2="{tr_y + 4.2:.1f}" '
+            f'stroke="{c["cap_stroke"]}" stroke-width="1.2" opacity="0.45"/>'
+            f'<line class="t{i}" x1="{base_x:.1f}" y1="{tr_y - 4.5:.1f}" x2="{base_x:.1f}" y2="{tr_y + 4.5:.1f}" '
+            f'stroke="{c["beam"]}" stroke-width="2.0" opacity="{notch_base_op}"/>'
+            f'</g>'
+        )
 
         # ---- Keyframes ----
         css.append(toggle_kf(f"v{i}", t0, t1))
@@ -707,41 +744,40 @@ def build(theme):
             f"100%{{transform:translateX({reveal:.1f}px);opacity:0}}}}"
         )
 
-        # Hardware fader cap motion keyframe (compositor-only translateY)
-        lift = rest_y - peak_y
+        # Horizontal hardware fader cap + fill bar motion keyframe (compositor-only translateX)
+        slide = peak_x - rest_x
         if i == 0:
-            # Base position is peak_y (0); drops to +lift when slot 0 ends, climbs back to 0 right before cycle wrap
+            # Base position is peak_x (0); drops left to -slide when slot 0 ends, climbs right back to 0 before cycle wrap
             css.append(
                 f"@keyframes cap0{{"
-                f"0%{{transform:translateY(0)}}"
-                f"{pct(t1)}{{transform:translateY(0);animation-timing-function:{EASE}}}"
-                f"{pct(t1 + FADER_MOVE)}{{transform:translateY({lift:.1f}px)}}"
-                f"{pct(CYCLE - FADER_MOVE)}{{transform:translateY({lift:.1f}px);animation-timing-function:{EASE}}}"
-                f"100%{{transform:translateY(0)}}}}"
+                f"0%{{transform:translateX(0)}}"
+                f"{pct(t1)}{{transform:translateX(0);animation-timing-function:{EASE}}}"
+                f"{pct(t1 + FADER_MOVE)}{{transform:translateX({-slide:.1f}px)}}"
+                f"{pct(CYCLE - FADER_MOVE)}{{transform:translateX({-slide:.1f}px);animation-timing-function:{EASE}}}"
+                f"100%{{transform:translateX(0)}}}}"
             )
         else:
-            # Base position is rest_y (0); climbs smoothly to -lift at t0, drops back to 0 after t1
+            # Base position is rest_x (0); slides right to +slide at t0, drops left back to 0 after t1
             t_up_end = min(CYCLE - 0.01, t0 + FADER_MOVE)
             if t1 < CYCLE:
                 t_dn_end = min(CYCLE, t1 + FADER_MOVE)
                 css.append(
                     f"@keyframes cap{i}{{"
-                    f"0%{{transform:translateY(0)}}"
-                    f"{pct(t0)}{{transform:translateY(0);animation-timing-function:{EASE}}}"
-                    f"{pct(t_up_end)}{{transform:translateY({-lift:.1f}px)}}"
-                    f"{pct(t1)}{{transform:translateY({-lift:.1f}px);animation-timing-function:{EASE}}}"
-                    f"{pct(t_dn_end)}{{transform:translateY(0)}}"
-                    f"100%{{transform:translateY(0)}}}}"
+                    f"0%{{transform:translateX(0)}}"
+                    f"{pct(t0)}{{transform:translateX(0);animation-timing-function:{EASE}}}"
+                    f"{pct(t_up_end)}{{transform:translateX({slide:.1f}px)}}"
+                    f"{pct(t1)}{{transform:translateX({slide:.1f}px);animation-timing-function:{EASE}}}"
+                    f"{pct(t_dn_end)}{{transform:translateX(0)}}"
+                    f"100%{{transform:translateX(0)}}}}"
                 )
             else:
-                # Last channel: lifts at t0, returns smoothly right before cycle end
                 css.append(
                     f"@keyframes cap{i}{{"
-                    f"0%{{transform:translateY(0)}}"
-                    f"{pct(t0)}{{transform:translateY(0);animation-timing-function:{EASE}}}"
-                    f"{pct(t_up_end)}{{transform:translateY({-lift:.1f}px)}}"
-                    f"{pct(CYCLE - FADER_MOVE)}{{transform:translateY({-lift:.1f}px);animation-timing-function:{EASE}}}"
-                    f"100%{{transform:translateY(0)}}}}"
+                    f"0%{{transform:translateX(0)}}"
+                    f"{pct(t0)}{{transform:translateX(0);animation-timing-function:{EASE}}}"
+                    f"{pct(t_up_end)}{{transform:translateX({slide:.1f}px)}}"
+                    f"{pct(CYCLE - FADER_MOVE)}{{transform:translateX({slide:.1f}px);animation-timing-function:{EASE}}}"
+                    f"100%{{transform:translateX(0)}}}}"
                 )
 
         base.append(f".t{i}{{opacity:{1 if i == 0 else 0}}}.c{i}{{opacity:0}}.s{i}{{opacity:0}}")
@@ -756,13 +792,13 @@ def build(theme):
 
     # Gradients, masks, clips, and deduplicated glyph paths
     gel_defs = "".join(
-        f'<linearGradient id="ch-{i}" x1="0%" y1="0%" x2="0%" y2="100%">'
-        f'<stop offset="0%" stop-color="{top_c}"/>'
-        f'<stop offset="56%" stop-color="{mid_c}"/>'
-        f'<stop offset="100%" stop-color="{bot_c}"/>'
+        f'<linearGradient id="hch-{i}" x1="0%" y1="0%" x2="100%" y2="0%">'
+        f'<stop offset="0%" stop-color="{wash_a}"/>'
+        f'<stop offset="55%" stop-color="{wash_b}"/>'
+        f'<stop offset="100%" stop-color="{dark_bar if theme == "dark" else light_bar}"/>'
         f'</linearGradient>'
-        for i, (top_c, mid_c, bot_c, _) in enumerate(CHANNEL_GELS)
-    )
+        for i, (wash_a, wash_b, dark_bar, light_bar) in enumerate(CHANNEL_GELS)
+    ) + "".join(track_clips)
     grad_defs = (
         f'<linearGradient id="cyc-h" x1="0%" y1="0%" x2="100%" y2="0%">'
         f'<stop offset="0%" stop-color="#133954"/><stop offset="44%" stop-color="#1F547A"/>'
