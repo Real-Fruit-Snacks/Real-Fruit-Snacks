@@ -1,9 +1,9 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/board-dark.svg">
-  <img alt="Real-Fruit-Snacks. Built local-first. Twelve active open-source tools across Rust, Python, C#, PowerShell, and TypeScript—stepping through each tool's input and output from screen-mark to open-file" src="assets/board-light.svg" width="100%">
+  <img alt="Real-Fruit-Snacks. Built local-first. Seventeen active open-source tools across Rust, Python, C#, PowerShell, TypeScript, and Go—stepping through each tool's input and output from screen-mark to shell-tunnel" src="assets/board-light.svg" width="100%">
 </picture>
 
-Local-first open-source software across Rust, Python, C#, PowerShell, and TypeScript: desktop utilities, Windows networking clients, Kali Linux workflows, and offline browser apps with zero accounts, zero tracking, and plain inputs and outputs. The interactive catalog lives at **[real-fruit-snacks.github.io](https://real-fruit-snacks.github.io/)** (front door: **[rfs.tools](https://rfs.tools/)**).
+Local-first open-source software across Rust, Python, C#, PowerShell, TypeScript, and Go: desktop utilities, Windows networking clients, Kali Linux workflows, and offline browser apps with zero accounts, zero tracking, and plain inputs and outputs. The interactive catalog lives at **[real-fruit-snacks.github.io](https://real-fruit-snacks.github.io/)** (front door: **[rfs.tools](https://rfs.tools/)**).
 
 | Tool | What it does |
 |---|---|
@@ -11,18 +11,21 @@ Local-first open-source software across Rust, Python, C#, PowerShell, and TypeSc
 | [**port-sync**](https://github.com/Real-Fruit-Snacks/port-sync)<br><sub>Rust · Windows</sub> | Keeps qBittorrent's port synced to Proton VPN |
 | [**carify**](https://github.com/Real-Fruit-Snacks/carify)<br><sub>sh, PowerShell · Windows, macOS, Linux</sub> | Convert video for Uconnect USB playback, via ffmpeg |
 | [**certapi**](https://github.com/Real-Fruit-Snacks/certapi)<br><sub>C# · Windows</sub> | mTLS API client for the Windows certificate store |
-| [**identity-gen**](https://github.com/Real-Fruit-Snacks/identity-gen)<br><sub>HTML · browser</sub> | Offline generator for throwaway signup identities |
+| [**identity-gen**](https://github.com/Real-Fruit-Snacks/identity-gen)<br><sub>HTML · Browser</sub> | Offline generator for throwaway signup identities |
 | [**amazon-order-sync**](https://github.com/Real-Fruit-Snacks/amazon-order-sync)<br><sub>Rust · Windows, Linux</sub> | Syncs your Amazon orders into local Markdown notes |
-| [**powershell-toolbox**](https://github.com/Real-Fruit-Snacks/powershell-toolbox)<br><sub>PowerShell · Windows</sub> | A grab-bag of standalone PowerShell scripts |
+| [**powershell-toolbox**](https://github.com/Real-Fruit-Snacks/powershell-toolbox)<br><sub>PowerShell · Windows</sub> | A grab-bag of my PowerShell scripts, each one standalone |
 | [**pwn-broker**](https://github.com/Real-Fruit-Snacks/pwn-broker)<br><sub>Python · Kali Linux</sub> | Keeps a box's targets, notes, creds, and tools in order |
 | [**pwn-shop**](https://github.com/Real-Fruit-Snacks/pwn-shop)<br><sub>Python · Kali Linux</sub> | Tool packages for pwn-broker, built from upstream releases |
 | [**pwn-playbooks**](https://github.com/Real-Fruit-Snacks/pwn-playbooks)<br><sub>Markdown · Kali Linux</sub> | Playbooks for pwn-broker: read into the note, fill in, run |
 | [**pwn-report**](https://github.com/Real-Fruit-Snacks/pwn-report)<br><sub>Python · Kali Linux</sub> | Private, evidence-linked reports from pwn-broker archives |
-| [**open-file**](https://github.com/Real-Fruit-Snacks/open-file)<br><sub>TypeScript · browser</sub> | Learn and play chess in your browser, offline |
+| [**open-file**](https://github.com/Real-Fruit-Snacks/open-file)<br><sub>TypeScript · Browser</sub> | Learn and play chess in your browser, offline |
+| [**one-billion-pixels**](https://github.com/Real-Fruit-Snacks/one-billion-pixels)<br><sub>TypeScript · Browser</sub> | Excavate one billion pixels in your browser, offline |
+| [**hash-bait**](https://github.com/Real-Fruit-Snacks/hash-bait)<br><sub>Rust · Windows, Linux</sub> | Drop poisoned shortcuts on SMB shares to coerce NTLM hashes |
+| [**cred-spray**](https://github.com/Real-Fruit-Snacks/cred-spray)<br><sub>Python · Windows, Linux</sub> | Bounded, protocol-aware credential spraying |
+| [**ad-sweep**](https://github.com/Real-Fruit-Snacks/ad-sweep)<br><sub>Rust · Windows, Linux</sub> | Runs isolated Active Directory enumeration with NetExec |
+| [**shell-tunnel**](https://github.com/Real-Fruit-Snacks/shell-tunnel)<br><sub>Go · Windows, Linux</sub> | Static SSH server for bind and reverse shells, PTY and SFTP |
 
 Supporting repositories: [rfs-brand](https://github.com/Real-Fruit-Snacks/rfs-brand) (Cyclorama Dawn brand system, marks, and repo cover tools), [rfs-themes](https://github.com/Real-Fruit-Snacks/rfs-themes) (Cyclorama Dawn themes and ports for everyday apps), and [rfs.tools](https://rfs.tools/) (the single-page front door).
-
-Retired archive (read-only, no fixes or releases): `forge-framework` · `agent-toolkit` · `dev-toolkit` · `Kraken` · `Maelstrom` · `Rapids` · `Lure` · `Undertow`.
 
 ### Core principles
 

@@ -1,18 +1,18 @@
 """Draw the Real-Fruit-Snacks profile README board: assets/board-dark.svg & assets/board-light.svg.
 
 World: Cyclorama Dawn (Steel & Beacon Orange).
-Architecture: 12-Channel Stage Lighting DMX Patch Console (1000x548).
+Architecture: 17-Channel Stage Lighting DMX Patch Console (1000x548).
   - Row 1: Unified Cyclorama RFS tile, REAL-FRUIT-SNACKS masthead, and LX cue tag.
   - Row 2: Live Stage Patch Deck showing active channel identity, plain description,
            dwell progress bar, and recessed IN -> OUT Signal Patch Bay with Beacon scan reveal.
-  - Row 3: 12-Channel Cyclorama Dawn DMX Fader Bank spanning all 12 active tools across
+  - Row 3: 17-Channel Cyclorama Dawn DMX Fader Bank spanning all 17 active tools across
            the Steel -> Beacon Horizon -> Flame -> Alabaster spectrum. As each channel activates,
            its hardware fader cap glides smoothly up to 86% live output while its Beacon frame
            and cue LED lock in.
 
 Static-First Invariant: Base DOM (outside prefers-reduced-motion: no-preference) renders
 Channel #01 (screen-mark) at full live peak with unobstructed IN -> OUT traces and Channels
-#02-#12 resting along the standby dawn curve—zero hidden content in static renderers or
+#02-#17 resting along the standby dawn curve—zero hidden content in static renderers or
 reduced-motion mode.
 
 All glyphs are outlined from self-hosted variable .woff2 fonts in art/fonts/ and deduplicated
@@ -43,7 +43,7 @@ TOOLS = [
         "Screenshot capture and annotation in pure Rust",
         "`Ctrl+PrintScreen`",
         "`screen-mark_2026-11-05_091412.png`",
-        ("screen-mark",),
+        ("screen-", "mark"),
     ),
     (
         "port-sync",
@@ -52,7 +52,7 @@ TOOLS = [
         "Keeps qBittorrent's port synced to Proton VPN",
         "`Port pair 51037->51037`",
         "`listening port updated: 48213 -> 51037`",
-        ("port-sync",),
+        ("port-", "sync"),
     ),
     (
         "carify",
@@ -75,11 +75,11 @@ TOOLS = [
     (
         "identity-gen",
         "HTML",
-        "browser",
+        "Browser",
         "Offline generator for throwaway signup identities",
         "a signup form that wants too much",
         "a stand-in: name, handle, passphrase",
-        ("identity-gen",),
+        ("identity-", "gen"),
     ),
     (
         "amazon-order-sync",
@@ -94,7 +94,7 @@ TOOLS = [
         "powershell-toolbox",
         "PowerShell",
         "Windows",
-        "A grab-bag of standalone PowerShell scripts",
+        "A grab-bag of my PowerShell scripts, each one standalone",
         "every repo your `gh` login sees",
         "one at a time: keep, archive or delete",
         ("powershell-", "toolbox"),
@@ -106,7 +106,7 @@ TOOLS = [
         "Keeps a box's targets, notes, creds, and tools in order",
         "`pwn-broker new`",
         "`2026-11-16_htb_forest.finished.tar.gz`",
-        ("pwn-broker",),
+        ("pwn-", "broker"),
     ),
     (
         "pwn-shop",
@@ -115,7 +115,7 @@ TOOLS = [
         "Tool packages for pwn-broker, built from upstream releases",
         "an upstream release, pinned by SHA-256",
         "`kerbrute-1.0.3-1.zip`",
-        ("pwn-shop",),
+        ("pwn-", "shop"),
     ),
     (
         "pwn-playbooks",
@@ -138,27 +138,77 @@ TOOLS = [
     (
         "open-file",
         "TypeScript",
-        "browser",
+        "Browser",
         "Learn and play chess in your browser, offline",
         "a blunder in one of your games",
         "a puzzle made from it",
-        ("open-file",),
+        ("open-", "file"),
+    ),
+    (
+        "one-billion-pixels",
+        "TypeScript",
+        "Browser",
+        "Excavate one billion pixels in your browser, offline",
+        "a single empty origin square",
+        "one billion pixels carved offline",
+        ("one-billion-", "pixels"),
+    ),
+    (
+        "hash-bait",
+        "Rust",
+        "Windows, Linux",
+        "Drop poisoned shortcuts on SMB shares to coerce NTLM hashes",
+        "`//dc1/public` + responder IP",
+        "poisoned `.url`/`.scf`/`.xml`, NetNTLMv2",
+        ("hash-", "bait"),
+    ),
+    (
+        "cred-spray",
+        "Python",
+        "Windows, Linux",
+        "Bounded, protocol-aware credential spraying",
+        "`scan.xml` + `credentials.txt`",
+        "`results.json`, 7 explicit statuses",
+        ("cred-", "spray"),
+    ),
+    (
+        "ad-sweep",
+        "Rust",
+        "Windows, Linux",
+        "Runs isolated Active Directory enumeration with NetExec",
+        "`10.0.0.1-2` + `credentials.txt`",
+        "ordered `results.json` per target",
+        ("ad-", "sweep"),
+    ),
+    (
+        "shell-tunnel",
+        "Go",
+        "Windows, Linux",
+        "Static SSH server for bind and reverse shells, PTY and SFTP",
+        "`./build.sh reverse 10.10.14.5:4444`",
+        "PTY shell, SFTP & `-L`/`-R`/`-D` via ssh",
+        ("shell-", "tunnel"),
     ),
 ]
 
-# 12-step Cyclorama Dawn gel spectrum marching from Blackout Steel -> LX 263 Beacon Horizon -> Flame -> Alabaster Day
+# 17-step Cyclorama Dawn gel spectrum marching from Blackout Steel -> LX 263 Beacon Horizon -> Flame -> Alabaster Day
 # (top_c, mid_c, bot_c, polarity)
 CHANNEL_GELS = [
-    ("#07090E", "#0F1824", "#182E42", "dark"),
+    ("#07090E", "#0E1520", "#16283B", "dark"),
+    ("#080B12", "#112132", "#18364E", "dark"),
     ("#080E16", "#132C42", "#1B4463", "dark"),
-    ("#09131C", "#163E5C", "#1F547A", "dark"),
-    ("#0C1824", "#1B4A6E", "#3B627C", "dark"),
+    ("#09131C", "#163B57", "#1F547A", "dark"),
+    ("#0B1620", "#194466", "#2D5B7B", "dark"),
+    ("#0D1B28", "#1C4B6F", "#655858", "dark"),
     ("#102436", "#1E4D72", "#AE5126", "dark"),
     ("#122F46", "#1F547A", "#F06E2B", "dark"),
+    ("#15202A", "#463B40", "#EC6A27", "dark"),
     ("#18100C", "#68280E", "#E86624", "dark"),
     ("#1A0A06", "#8B2F0B", "#F06E2B", "dark"),
+    ("#210E08", "#9B3810", "#F27B3B", "dark"),
     ("#26120B", "#A63F14", "#F48A4C", "dark"),
     ("#2C1913", "#AE572F", "#E6B393", "dark"),
+    ("#C9D8E4", "#E6DFDA", "#F9F1EC", "light"),
     ("#DCE5ED", "#EFE4DB", "#FDF8F5", "light"),
     ("#EAEEF2", "#F5F7F9", "#FFFFFF", "light"),
 ]
@@ -488,7 +538,7 @@ def build(theme):
     css.append("@keyframes dwell{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}")
     rules.append(f".dwell-bar{{transform-origin:{PROG_X}px {PROG_Y}px;animation:dwell {SLOT}s linear infinite}}")
 
-    # 4. Row 3: 12-Channel Cyclorama Dawn DMX Fader Bank (x=32, y=304, w=936, h=222)
+    # 4. Row 3: 17-Channel Cyclorama Dawn DMX Fader Bank (x=32, y=304, w=936, h=222)
     BANK_X, BANK_Y, BANK_W, BANK_H = 32, 304, 936, 222
     o.append(f'<rect x="{BANK_X}" y="{BANK_Y}" width="{BANK_W}" height="{BANK_H}" rx="12" fill="{c["deck"]}" stroke="{c["line"]}" stroke-width="1.2"/>')
     o.append(text(f"CYCLORAMA DAWN  ·  {len(TOOLS)}-CHANNEL DMX FADER BANK", BANK_X + 20, BANK_Y + 23, 10, mono_b, c["steel"], ls=0.10))
@@ -497,16 +547,20 @@ def build(theme):
 
     # Fader channel grid geometry
     n = len(TOOLS)
-    col_gap = 7.0
+    col_gap = 5.0
     cols_x = BANK_X + 18.0
     cols_w = BANK_W - 36.0
-    col_w = (cols_w - col_gap * (n - 1)) / n  # ~68.6px per channel for 12 tools
+    col_w = (cols_w - col_gap * (n - 1)) / n  # ~48.24px per channel for 17 tools
     col_top = BANK_Y + 43.0
     col_h = 122.0
     col_bot = col_top + col_h
     slot_top = col_top + 18.0
     slot_bot = col_bot - 16.0
     slot_span = slot_bot - slot_top
+    led_rest_w = 22.0
+    led_lit_w = 26.0
+    tick_hw = 4.0
+    cap_w, cap_h = round(col_w * 0.58, 1), 10.5
 
     # Draw static fader columns + slots + standby ticks + resting labels first
     col_meta = []
@@ -523,17 +577,17 @@ def build(theme):
             f'rx="6" fill="url(#ch-{i})" stroke="{c["line"]}" stroke-width="1"/>'
         )
         # Resting dim top LED bar
-        o.append(f'<rect x="{mid_x - 14:.1f}" y="{col_top + 6:.1f}" width="28" height="3" rx="1.5" fill="{led_dim}"/>')
+        o.append(f'<rect x="{mid_x - led_rest_w / 2:.1f}" y="{col_top + 6:.1f}" width="{led_rest_w:.1f}" height="3" rx="1.5" fill="{led_dim}"/>')
         # Vertical DMX fader slot + 3 micro calibration ticks
         o.append(f'<line x1="{mid_x:.1f}" y1="{slot_top:.1f}" x2="{mid_x:.1f}" y2="{slot_bot:.1f}" stroke="{slot_stroke}" stroke-width="1.5" stroke-linecap="round"/>')
         for frac in (0.25, 0.5, 0.75):
             ty = slot_bot - frac * slot_span
-            o.append(f'<line x1="{mid_x - 5:.1f}" y1="{ty:.1f}" x2="{mid_x + 5:.1f}" y2="{ty:.1f}" stroke="{slot_stroke}" stroke-width="1"/>')
+            o.append(f'<line x1="{mid_x - tick_hw:.1f}" y1="{ty:.1f}" x2="{mid_x + tick_hw:.1f}" y2="{ty:.1f}" stroke="{slot_stroke}" stroke-width="1"/>')
 
         # Resting muted channel number & repo label under column
-        o.append(text(f"{i + 1:02d}", mid_x, col_bot + 16, 9.5, mono_b, c["mute"], ls=0.06, anchor="middle"))
+        o.append(text(f"{i + 1:02d}", mid_x, col_bot + 16, 8.5, mono_b, c["mute"], ls=0.05, anchor="middle"))
         for li, sline in enumerate(short_lines):
-            o.append(text(sline, mid_x, col_bot + 29 + li * 10.5, 9.0, sans_m, c["mute"], anchor="middle"))
+            o.append(text(sline, mid_x, col_bot + 28 + li * 10.0, 8.0, sans_m, c["mute"], anchor="middle"))
 
         rest_level = 0.16 + 0.34 * (i / (n - 1))
         peak_level = 0.86
@@ -558,7 +612,7 @@ def build(theme):
         # ---- Active Stage Group (Viewport + Active Channel Frame/LED/Label) ----
         g = [f'<g class="t{i}"{init_op}>']
 
-        # Terminal Token Cue Tag ([ch 01/11]) + Stack/Platform
+        # Terminal Token Cue Tag ([ch 01/17]) + Stack/Platform
         ch_lbl = f"[ch {i + 1:02d}/{n:02d}]"
         tag_w = mono_b.width(ch_lbl, 10, 0.04) + 16
         g.append(f'<rect x="56" y="112" width="{tag_w:.1f}" height="22" rx="4" fill="{c["code_bg"]}" stroke="{c["line"]}"/>')
@@ -610,16 +664,15 @@ def build(theme):
             f'<rect x="{cx:.1f}" y="{col_top:.1f}" width="{col_w:.1f}" height="{col_h:.1f}" '
             f'rx="6" fill="none" stroke="{c["beam"]}" stroke-width="2.2"/>'
         )
-        g.append(f'<rect x="{mid_x - 16:.1f}" y="{col_top + 5.5:.1f}" width="32" height="3.5" rx="1.75" fill="{led_lit}"/>')
-        g.append(text(f"{i + 1:02d}", mid_x, col_bot + 16, 9.5, mono_b, c["beacon"], ls=0.06, anchor="middle"))
+        g.append(f'<rect x="{mid_x - led_lit_w / 2:.1f}" y="{col_top + 5.5:.1f}" width="{led_lit_w:.1f}" height="3.5" rx="1.75" fill="{led_lit}"/>')
+        g.append(text(f"{i + 1:02d}", mid_x, col_bot + 16, 8.5, mono_b, c["beacon"], ls=0.05, anchor="middle"))
         for li, sline in enumerate(short_lines):
-            g.append(text(sline, mid_x, col_bot + 29 + li * 10.5, 9.0, sans_b, c["ink"], anchor="middle"))
+            g.append(text(sline, mid_x, col_bot + 28 + li * 10.0, 8.0, sans_b, c["ink"], anchor="middle"))
 
         g.append("</g>")
         o.append("".join(g))
 
         # ---- Hardware Fader Cap (drawn ON TOP of active frame; glides up to 86% live peak!) ----
-        cap_w, cap_h = 38.0, 11.0
         cap_fill = "#FFFFFF" if polarity == "dark" else "#0D1016"
         cap_stroke = "#050507" if polarity == "dark" else "#FFFFFF"
         base_y = peak_y if i == 0 else rest_y
@@ -629,9 +682,9 @@ def build(theme):
             f'<g class="cap{i}">'
             f'<rect x="{mid_x - cap_w / 2:.1f}" y="{base_y - cap_h / 2:.1f}" width="{cap_w:.1f}" height="{cap_h:.1f}" '
             f'rx="2.5" fill="{cap_fill}" stroke="{cap_stroke}" stroke-width="1.2"/>'
-            f'<line x1="{mid_x - cap_w / 2 + 5:.1f}" y1="{base_y:.1f}" x2="{mid_x + cap_w / 2 - 5:.1f}" y2="{base_y:.1f}" '
+            f'<line x1="{mid_x - cap_w / 2 + 4:.1f}" y1="{base_y:.1f}" x2="{mid_x + cap_w / 2 - 4:.1f}" y2="{base_y:.1f}" '
             f'stroke="{cap_stroke}" stroke-width="1.5" opacity="0.55"/>'
-            f'<line class="t{i}" x1="{mid_x - cap_w / 2 + 4:.1f}" y1="{base_y:.1f}" x2="{mid_x + cap_w / 2 - 4:.1f}" y2="{base_y:.1f}" '
+            f'<line class="t{i}" x1="{mid_x - cap_w / 2 + 3.5:.1f}" y1="{base_y:.1f}" x2="{mid_x + cap_w / 2 - 3.5:.1f}" y2="{base_y:.1f}" '
             f'stroke="{c["beam"]}" stroke-width="2.2" opacity="{notch_base_op}"/>'
             f'</g>'
         )
@@ -681,7 +734,7 @@ def build(theme):
                     f"100%{{transform:translateY(0)}}}}"
                 )
             else:
-                # Last channel (11): lifts at t0, returns smoothly right before cycle end
+                # Last channel: lifts at t0, returns smoothly right before cycle end
                 css.append(
                     f"@keyframes cap{i}{{"
                     f"0%{{transform:translateY(0)}}"
