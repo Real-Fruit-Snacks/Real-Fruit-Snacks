@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/board-dark.svg">
-  <img alt="Real-Fruit-Snacks. Built local-first. Seventeen active open-source tools across Rust, Python, C#, PowerShell, TypeScript, and Go—stepping through each tool's input and output from screen-mark to shell-tunnel" src="assets/board-light.svg" width="100%">
+  <img alt="Real-Fruit-Snacks. Built local-first. Sixteen active open-source tools across Rust, Python, C#, PowerShell, TypeScript, and Go—stepping through each tool's input and output from screen-mark to shell-tunnel" src="assets/board-light.svg" width="100%">
 </picture>
 
 Local-first open-source software across Rust, Python, C#, PowerShell, TypeScript, and Go: desktop utilities, Windows networking clients, Kali Linux workflows, and offline browser apps with zero accounts, zero tracking, and plain inputs and outputs. The interactive catalog lives at **[real-fruit-snacks.github.io](https://real-fruit-snacks.github.io/)** (front door: **[rfs.tools](https://rfs.tools/)**).
@@ -19,7 +19,6 @@ Local-first open-source software across Rust, Python, C#, PowerShell, TypeScript
 | [**pwn-playbooks**](https://github.com/Real-Fruit-Snacks/pwn-playbooks)<br><sub>Markdown · Kali Linux</sub> | Playbooks for pwn-broker: read into the note, fill in, run |
 | [**pwn-report**](https://github.com/Real-Fruit-Snacks/pwn-report)<br><sub>Python · Kali Linux</sub> | Private, evidence-linked reports from pwn-broker archives |
 | [**open-file**](https://github.com/Real-Fruit-Snacks/open-file)<br><sub>TypeScript · Browser</sub> | Learn and play chess in your browser, offline |
-| [**one-billion-pixels**](https://github.com/Real-Fruit-Snacks/one-billion-pixels)<br><sub>TypeScript · Browser</sub> | Excavate one billion pixels in your browser, offline |
 | [**hash-bait**](https://github.com/Real-Fruit-Snacks/hash-bait)<br><sub>Rust · Windows, Linux</sub> | Drop poisoned shortcuts on SMB shares to coerce NTLM hashes |
 | [**cred-spray**](https://github.com/Real-Fruit-Snacks/cred-spray)<br><sub>Python · Windows, Linux</sub> | Bounded, protocol-aware credential spraying |
 | [**ad-sweep**](https://github.com/Real-Fruit-Snacks/ad-sweep)<br><sub>Rust · Windows, Linux</sub> | Runs isolated Active Directory enumeration with NetExec |

@@ -1,18 +1,18 @@
 """Draw the Real-Fruit-Snacks profile README board: assets/board-dark.svg & assets/board-light.svg.
 
 World: Cyclorama Dawn (Steel & Beacon Orange).
-Architecture: 17-Channel Stage Lighting DMX Cue Matrix Console (1000x610).
+Architecture: 16-Channel Stage Lighting DMX Cue Matrix Console (1000x610).
   - Row 1: Unified Cyclorama RFS tile, REAL-FRUIT-SNACKS masthead, and LX cue tag.
   - Row 2: Live Stage Patch Deck showing active channel identity, plain description,
            dwell progress bar, and recessed IN -> OUT Signal Patch Bay with Beacon scan reveal.
-  - Row 3: 3x6 Cyclorama Dawn DMX Cue Matrix spanning all 17 active tools with unwrapped
+  - Row 3: 3x6 Cyclorama Dawn DMX Cue Matrix spanning all 16 active tools with unwrapped
            single-line repo names, smooth Obsidian -> Steel -> Beacon Orange -> Golden Dawn
            gel bars, and synchronized horizontal hardware faders that glide to 86% live output
            as each channel activates.
 
 Static-First Invariant: Base DOM (outside prefers-reduced-motion: no-preference) renders
 Channel #01 (screen-mark) at full live peak with unobstructed IN -> OUT traces and Channels
-#02-#17 resting along the standby dawn curve—zero hidden content in static renderers or
+#02-#16 resting along the standby dawn curve—zero hidden content in static renderers or
 reduced-motion mode.
 
 All glyphs are outlined from self-hosted variable .woff2 fonts in art/fonts/ and deduplicated
@@ -146,15 +146,6 @@ TOOLS = [
         ("open-", "file"),
     ),
     (
-        "one-billion-pixels",
-        "TypeScript",
-        "Browser",
-        "Excavate one billion pixels in your browser, offline",
-        "a single empty origin square",
-        "one billion pixels carved offline",
-        ("one-billion-", "pixels"),
-    ),
-    (
         "hash-bait",
         "Rust",
         "Windows, Linux",
@@ -192,7 +183,7 @@ TOOLS = [
     ),
 ]
 
-# 17-step smooth Cyclorama Dawn gel spectrum (zero blown-out white cliff):
+# 16-step smooth Cyclorama Dawn gel spectrum (zero blown-out white cliff):
 # Obsidian Steel -> Glacial Steel -> Horizon Break -> Beacon Orange -> Golden Dawn Crest
 # Tuple: (wash_start, wash_mid, dark_bar, light_bar)
 CHANNEL_GELS = [
@@ -208,11 +199,10 @@ CHANNEL_GELS = [
     ("#1B1922", "#6A3F3A", "#DF6B30", "#B24B18"),  # 10 pwn-playbooks
     ("#1F151A", "#823622", "#EB6C2B", "#C44D14"),  # 11 pwn-report
     ("#221213", "#983718", "#F06E2B", "#D15316"),  # 12 open-file
-    ("#25120F", "#AB3E17", "#F47E38", "#D65A1A"),  # 13 one-billion-pixels
-    ("#28140E", "#BC4A1B", "#F89048", "#CC601C"),  # 14 hash-bait
-    ("#2B170F", "#C95922", "#FCA45C", "#BE641E"),  # 15 cred-spray
-    ("#2E1A11", "#D4692C", "#FFB872", "#B06620"),  # 16 ad-sweep
-    ("#311E13", "#DE7A38", "#FFCC8C", "#A16622"),  # 17 shell-tunnel
+    ("#28140E", "#BC4A1B", "#F89048", "#CC601C"),  # 13 hash-bait
+    ("#2B170F", "#C95922", "#FCA45C", "#BE641E"),  # 14 cred-spray
+    ("#2E1A11", "#D4692C", "#FFB872", "#B06620"),  # 15 ad-sweep
+    ("#311E13", "#DE7A38", "#FFCC8C", "#A16622"),  # 16 shell-tunnel
 ]
 
 # Cyclorama Dawn — Steel & Beacon Orange (LX 263 Dark / LX 512 Alabaster Day)
@@ -273,7 +263,7 @@ MATRIX_ROWS = math.ceil((len(TOOLS) + 1) / MATRIX_COLS)
 BANK_X, BANK_Y, BANK_W = 32, 304, 936
 CELL_H, CELL_GX, CELL_GY = 32.5, 10.0, 7.0
 BANK_H = round(43 + MATRIX_ROWS * CELL_H + (MATRIX_ROWS - 1) * CELL_GY + 11)
-H = BANK_Y + BANK_H + 22  # 610px for 17 tools (3x6)
+H = BANK_Y + BANK_H + 22  # 610px for 16 tools (3x6)
 SLOT = 3.2
 CYCLE = SLOT * len(TOOLS)
 SWEEP_AT, SWEEP = 0.35, 0.80
@@ -613,20 +603,22 @@ def build(theme):
         peak_x = tr_x + peak_level * tr_w
         cell_meta.append((cx, cy, tr_x, tr_y, bar_col, lbl_sz, rest_x, peak_x))
 
-    # Trailing summary cell (fills slot #18 in the 3x6 grid)
+    # Trailing summary cell (fills remaining slot(s) cleanly to the right edge of the 3x6 grid)
     if n < MATRIX_COLS * MATRIX_ROWS:
         mr = n // MATRIX_COLS
         mc = n % MATRIX_COLS
+        rem_cols = MATRIX_COLS - mc
+        sum_w = rem_cols * cell_w + (rem_cols - 1) * CELL_GX
         mx = grid_x + mc * (cell_w + CELL_GX)
         my = grid_y + mr * (CELL_H + CELL_GY)
-        lx_code = "LX 263" if theme == "dark" else "LX 512"
+        lx_code = "LX 263 · BEACON HORIZON" if (theme == "dark" and rem_cols > 1) else ("LX 512 · ALABASTER DAY" if rem_cols > 1 else ("LX 263" if theme == "dark" else "LX 512"))
         o.append(
-            f'<rect x="{mx:.1f}" y="{my:.1f}" width="{cell_w:.1f}" height="{CELL_H:.1f}" '
+            f'<rect x="{mx:.1f}" y="{my:.1f}" width="{sum_w:.1f}" height="{CELL_H:.1f}" '
             f'rx="5" fill="{c["code_bg"]}" stroke="{c["line_strong"]}" stroke-width="1"/>'
         )
-        o.append(f'<rect x="{mx + 1:.1f}" y="{my + 1:.1f}" width="{cell_w - 2:.1f}" height="2.5" rx="1.25" fill="url(#rule)"/>')
+        o.append(f'<rect x="{mx + 1:.1f}" y="{my + 1:.1f}" width="{sum_w - 2:.1f}" height="2.5" rx="1.25" fill="url(#rule)"/>')
         o.append(text(lx_code, mx + 12, my + 20.5, 9.5, mono_b, c["steel"], ls=0.06))
-        o.append(text(f"{n} ACTIVE · ZERO ACCOUNTS", mx + cell_w - 12, my + 20.5, 9.0, mono_r, c["mute"], ls=0.05, anchor="end"))
+        o.append(text(f"{n} ACTIVE · ZERO ACCOUNTS", mx + sum_w - 12, my + 20.5, 9.0, mono_r, c["mute"], ls=0.05, anchor="end"))
 
     # 5. Per-Tool Active Stage Viewport + Active Strip Highlight + Animated Horizontal Fader
     TEXT_X = BAY_X + 56
